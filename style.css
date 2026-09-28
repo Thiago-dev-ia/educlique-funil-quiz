@@ -1550,7 +1550,7 @@ body.educly-light-body {
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   TEMA 1: EDUCLY AUTORAL ORIGINAL (Padrão Oficial Light)
+   TEMA 1: EDUCLY AUTORAL ORIGINAL (Padrão Oficial Light Limpo)
    -------------------------------------------------------------------------- */
 body.theme-educly-1 {
   background-color: #F8FAFC;
@@ -1558,23 +1558,23 @@ body.theme-educly-1 {
 }
 
 /* --------------------------------------------------------------------------
-   TEMA 2: SWISS MINIMALIST & BENTO EDITORIAL (Alta Clareza e Linhas Cirúrgicas)
+   TEMA 2: SWISS MINIMALIST & BENTO EDITORIAL (Design Suíço, Alto Contraste, Papel Creme)
    -------------------------------------------------------------------------- */
 body.theme-swiss-2 {
-  background-color: #FAFAFA !important;
-  color: #09090B !important;
+  background-color: #F4F4F0 !important;
+  color: #000000 !important;
 }
 
 body.theme-swiss-2 .educly-clean-header {
   background: #FFFFFF !important;
-  border-bottom: 1px solid #18181B !important;
+  border-bottom: 2px solid #000000 !important;
 }
 
 body.theme-swiss-2 .quiz-container-box {
   background: #FFFFFF !important;
-  border: 1.5px solid #18181B !important;
-  box-shadow: 4px 4px 0 #18181B !important;
-  border-radius: 6px !important;
+  border: 2px solid #000000 !important;
+  box-shadow: 6px 6px 0 #000000 !important;
+  border-radius: 4px !important;
 }
 
 body.theme-swiss-2 .v-title,
@@ -1582,70 +1582,122 @@ body.theme-swiss-2 .main-quiz-title {
   font-family: 'Plus Jakarta Sans', sans-serif !important;
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
-  color: #09090B !important;
+  color: #000000 !important;
+}
+
+body.theme-swiss-2 .v-desc,
+body.theme-swiss-2 .main-quiz-lead {
+  color: #3F3F46 !important;
+  font-weight: 500 !important;
 }
 
 body.theme-swiss-2 .choice-card {
-  border: 1px solid #18181B !important;
+  border: 1.5px solid #000000 !important;
   border-radius: 4px !important;
-  background: #FAFAFA !important;
-  box-shadow: none !important;
+  background: #FFFFFF !important;
+  box-shadow: 3px 3px 0 #000000 !important;
+  margin-bottom: 8px !important;
+  color: #000000 !important;
 }
 
 body.theme-swiss-2 .choice-card:hover {
-  background: #FFFFFF !important;
-  box-shadow: 3px 3px 0 #18181B !important;
+  background: #F4F4F5 !important;
+  box-shadow: 5px 5px 0 #000000 !important;
   transform: translate(-1px, -1px) !important;
 }
 
 body.theme-swiss-2 .choice-card.selected {
-  background: #F4F4F5 !important;
-  border: 2px solid #09090B !important;
-  box-shadow: 3px 3px 0 #09090B !important;
+  background: #E4E4E7 !important;
+  border: 2px solid #000000 !important;
+  box-shadow: 4px 4px 0 #000000 !important;
+}
+
+body.theme-swiss-2 .c-title {
+  color: #000000 !important;
+  font-weight: 700 !important;
+  font-size: 0.98rem !important;
+}
+
+body.theme-swiss-2 .c-sub {
+  color: #52525B !important;
+  font-weight: 500 !important;
+  font-size: 0.84rem !important;
+}
+
+body.theme-swiss-2 .c-icon-circle {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  border-radius: 4px !important;
+}
+
+body.theme-swiss-2 .c-check-circle {
+  border-color: #000000 !important;
+  color: #000000 !important;
 }
 
 body.theme-swiss-2 .btn-primary-orange,
 body.theme-swiss-2 .btn-checkout-glow {
-  background: #09090B !important;
+  background: #000000 !important;
   color: #FFFFFF !important;
+  border: 2px solid #000000 !important;
   border-radius: 4px !important;
-  box-shadow: 3px 3px 0 #71717A !important;
+  box-shadow: 4px 4px 0 #52525B !important;
+  font-weight: 800 !important;
+}
+
+body.theme-swiss-2 .prog-bar-track {
+  background: #E4E4E7 !important;
+  border: 1px solid #000000 !important;
 }
 
 body.theme-swiss-2 .prog-bar-fill {
-  background: #09090B !important;
+  background: #000000 !important;
 }
 
 /* --------------------------------------------------------------------------
-   TEMA 3: DARK OLED KINETIC LEARNING (Shimmer Light Beam & Barra Neon)
+   TEMA 3: CYBERPUNK NEO-TERMINAL / KINETIC DEEP DARK (Preto Puro, Ciano Elétrico)
    -------------------------------------------------------------------------- */
 body.theme-dark-3 {
-  background-color: #030712 !important;
-  background-image: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.15) 0%, transparent 60%) !important;
+  background-color: #050811 !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 242, 254, 0.12) 0%, transparent 50%),
+    linear-gradient(rgba(0, 242, 254, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 242, 254, 0.03) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 30px 30px, 30px 30px !important;
   color: #F8FAFC !important;
 }
 
 body.theme-dark-3 .educly-clean-header {
-  background: rgba(3, 7, 18, 0.88) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: rgba(5, 8, 17, 0.95) !important;
+  border-bottom: 1px solid rgba(0, 242, 254, 0.25) !important;
 }
 
 body.theme-dark-3 .quiz-container-box {
-  background: #090D16 !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-  border-radius: 18px !important;
+  background: #090E1A !important;
+  border: 1px solid rgba(0, 242, 254, 0.3) !important;
+  box-shadow: 0 0 35px rgba(0, 242, 254, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
 }
 
 body.theme-dark-3 .main-quiz-title,
 body.theme-dark-3 .v-title {
   color: #FFFFFF !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+body.theme-dark-3 .v-desc,
+body.theme-dark-3 .main-quiz-lead {
+  color: #94A3B8 !important;
+}
+
+body.theme-dark-3 .v-eyebrow {
+  color: #00F2FE !important;
 }
 
 /* Efeito de Feixe de Luz Shimmer Beam no texto */
 body.theme-dark-3 .highlight-orange,
 body.theme-dark-3 .v-title span {
-  background: linear-gradient(110deg, #94A3B8 20%, #FFFFFF 40%, #22D3EE 50%, #A855F7 60%, #94A3B8 80%) !important;
+  background: linear-gradient(110deg, #38BDF8 20%, #FFFFFF 40%, #00F2FE 50%, #A855F7 60%, #38BDF8 80%) !important;
   background-size: 200% auto !important;
   color: transparent !important;
   -webkit-background-clip: text !important;
@@ -1653,82 +1705,91 @@ body.theme-dark-3 .v-title span {
   animation: textShimmerBeamTheme 3.5s linear infinite !important;
 }
 
-@keyframes textShimmerBeamTheme {
-  0% { background-position: 200% center; }
-  100% { background-position: -200% center; }
-}
-
 /* Barra Neon Viva com Pulso */
 body.theme-dark-3 .prog-bar-track {
   background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(0, 242, 254, 0.2) !important;
 }
 
 body.theme-dark-3 .prog-bar-fill {
-  background: linear-gradient(90deg, #06B6D4, #8B5CF6, #EC4899) !important;
-  background-size: 200% 100% !important;
-  animation: pulseNeonBar 3s linear infinite !important;
-  box-shadow: 0 0 12px rgba(6, 182, 212, 0.6) !important;
-}
-
-@keyframes pulseNeonBar {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  background: linear-gradient(90deg, #00F2FE, #3B82F6, #8B5CF6) !important;
+  box-shadow: 0 0 14px rgba(0, 242, 254, 0.8) !important;
 }
 
 body.theme-dark-3 .choice-card {
-  background: rgba(15, 23, 42, 0.65) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: #F8FAFC !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  background: #0D1424 !important;
+  border: 1px solid rgba(0, 242, 254, 0.2) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
 }
 
 body.theme-dark-3 .choice-card:hover {
-  background: rgba(15, 23, 42, 0.9) !important;
-  border-color: rgba(34, 211, 238, 0.5) !important;
-  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.15) !important;
+  background: #131E35 !important;
+  border-color: #00F2FE !important;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.25) !important;
+  transform: translateY(-1px) !important;
 }
 
 body.theme-dark-3 .choice-card.selected {
-  background: rgba(6, 182, 212, 0.12) !important;
-  border-color: #22D3EE !important;
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3) !important;
+  background: rgba(0, 242, 254, 0.12) !important;
+  border-color: #00F2FE !important;
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.4) !important;
 }
 
-body.theme-dark-3 .choice-icon {
-  background: rgba(34, 211, 238, 0.1) !important;
-  color: #22D3EE !important;
+body.theme-dark-3 .c-title {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 0.98rem !important;
+}
+
+body.theme-dark-3 .c-sub {
+  color: #94A3B8 !important;
+  font-weight: 400 !important;
+  font-size: 0.84rem !important;
+  line-height: 1.4 !important;
+}
+
+body.theme-dark-3 .c-icon-circle {
+  background: rgba(0, 242, 254, 0.15) !important;
+  color: #00F2FE !important;
+  border: 1px solid rgba(0, 242, 254, 0.3) !important;
+}
+
+body.theme-dark-3 .c-check-circle {
+  border-color: rgba(0, 242, 254, 0.4) !important;
+  color: #00F2FE !important;
 }
 
 body.theme-dark-3 .btn-primary-orange,
 body.theme-dark-3 .btn-checkout-glow {
-  background: linear-gradient(90deg, #06B6D4, #8B5CF6) !important;
-  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4) !important;
+  background: linear-gradient(90deg, #00F2FE, #2563EB) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 25px rgba(0, 242, 254, 0.45) !important;
+  border: none !important;
 }
 
 /* --------------------------------------------------------------------------
-   TEMA 4: AURORA TECH GLASS (Índigo Violeta, Acolhedor e Moderno)
+   TEMA 4: AURORA TECH GLASS (Índigo Violeta Translúcido, Suave e Profundo)
    -------------------------------------------------------------------------- */
 body.theme-aurora-4 {
-  background-color: #0F172A !important;
+  background-color: #090D18 !important;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.25) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.2) 0%, transparent 40%) !important;
+    radial-gradient(circle at 15% 25%, rgba(99, 102, 241, 0.28) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(168, 85, 247, 0.22) 0%, transparent 45%) !important;
   color: #F8FAFC !important;
 }
 
 body.theme-aurora-4 .educly-clean-header {
-  background: rgba(15, 23, 42, 0.85) !important;
-  border-bottom: 1px solid rgba(99, 102, 241, 0.2) !important;
+  background: rgba(9, 13, 24, 0.88) !important;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.25) !important;
 }
 
 body.theme-aurora-4 .quiz-container-box {
-  background: rgba(30, 41, 59, 0.7) !important;
-  border: 1px solid rgba(99, 102, 241, 0.3) !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(99, 102, 241, 0.15) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
+  background: rgba(22, 29, 49, 0.75) !important;
+  border: 1px solid rgba(129, 140, 248, 0.3) !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5), 0 0 35px rgba(99, 102, 241, 0.2) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
   border-radius: 20px !important;
 }
 
@@ -1737,39 +1798,67 @@ body.theme-aurora-4 .v-title {
   color: #FFFFFF !important;
 }
 
+body.theme-aurora-4 .v-desc,
+body.theme-aurora-4 .main-quiz-lead {
+  color: #CBD5E1 !important;
+}
+
+body.theme-aurora-4 .v-eyebrow {
+  color: #A5B4FC !important;
+}
+
 body.theme-aurora-4 .highlight-orange,
 body.theme-aurora-4 .v-title span {
-  color: #818CF8 !important;
+  color: #A5B4FC !important;
 }
 
 body.theme-aurora-4 .choice-card {
-  background: rgba(15, 23, 42, 0.6) !important;
-  border: 1px solid rgba(99, 102, 241, 0.2) !important;
-  color: #F8FAFC !important;
+  background: rgba(15, 23, 42, 0.65) !important;
+  border: 1px solid rgba(129, 140, 248, 0.25) !important;
+  color: #FFFFFF !important;
 }
 
 body.theme-aurora-4 .choice-card:hover {
-  background: rgba(30, 41, 59, 0.9) !important;
+  background: rgba(30, 41, 59, 0.85) !important;
   border-color: #818CF8 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.25) !important;
 }
 
 body.theme-aurora-4 .choice-card.selected {
-  background: rgba(99, 102, 241, 0.2) !important;
-  border-color: #818CF8 !important;
-  box-shadow: 0 0 0 1.5px #818CF8, 0 4px 20px rgba(99, 102, 241, 0.3) !important;
+  background: rgba(99, 102, 241, 0.25) !important;
+  border-color: #A5B4FC !important;
+  box-shadow: 0 0 0 1.5px #A5B4FC, 0 4px 25px rgba(99, 102, 241, 0.35) !important;
 }
 
-body.theme-aurora-4 .choice-icon {
-  background: rgba(99, 102, 241, 0.2) !important;
-  color: #818CF8 !important;
+body.theme-aurora-4 .c-title {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 0.98rem !important;
+}
+
+body.theme-aurora-4 .c-sub {
+  color: #94A3B8 !important;
+  font-weight: 400 !important;
+  font-size: 0.84rem !important;
+  line-height: 1.4 !important;
+}
+
+body.theme-aurora-4 .c-icon-circle {
+  background: rgba(99, 102, 241, 0.25) !important;
+  color: #A5B4FC !important;
+  border: 1px solid rgba(165, 180, 252, 0.3) !important;
+}
+
+body.theme-aurora-4 .c-check-circle {
+  border-color: rgba(165, 180, 252, 0.4) !important;
+  color: #A5B4FC !important;
 }
 
 body.theme-aurora-4 .btn-primary-orange,
 body.theme-aurora-4 .btn-checkout-glow {
   background: linear-gradient(135deg, #6366F1, #8B5CF6) !important;
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 8px 26px rgba(99, 102, 241, 0.45) !important;
 }
 
 body.theme-aurora-4 .prog-bar-fill {

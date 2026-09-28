@@ -1392,6 +1392,140 @@ document.addEventListener('DOMContentLoaded', () => {
 ]
   };
 
+  // DICIONÁRIO DE COPYS EXCLUSIVAS DA TELA INICIAL (HERO / INTRO) POR TRILHA E IDIOMA
+  const introTrackCopies = {
+  "pt": {
+    "auto": {
+      "badge": "DESAFIO DE 28 DIAS DE IA",
+      "title": "Descubra qual é o seu <span class=\"highlight-orange\">nível real de IA</span> e quanto tempo você pode economizar.",
+      "lead": "Faça o teste prático de 2 minutos para receber seu plano guiado de micro-lições diárias de 15 minutos com <strong>ChatGPT, Claude, Gemini, Midjourney</strong> e automações de fluxos de trabalho no Educly.",
+      "btn": "COMEÇAR TESTE DE NÍVEL"
+    },
+    "checkout": {
+      "badge": "PRODUTIVIDADE INDIVIDUAL & CARREIRA",
+      "title": "Elimine tarefas repetitivas e trabalhe <span class=\"highlight-orange\">10x mais rápido</span> com IA.",
+      "lead": "Identifique os gargalos manuais da sua rotina profissional e receba um plano prático para dominar as melhores ferramentas de IA aplicada em 48 horas.",
+      "btn": "ACELERAR MINHA ROTINA"
+    },
+    "whatsapp": {
+      "badge": "CAPACITAÇÃO CORPORATIVA & ESCALA B2B",
+      "title": "Diagnóstico de IA para Empresas: Eleve a <span class=\"highlight-orange\">eficiência operacional</span> do seu time.",
+      "lead": "Mapeie o nível de maturidade digital dos seus colaboradores, reduza custos com retrabalho e receba uma proposta corporativa personalizada com painel de gestão.",
+      "btn": "INICIAR DIAGNÓSTICO CORPORATIVO"
+    },
+    "lead": {
+      "badge": "GUIA PRÁTICO GRATUITO • PRIMEIROS PASSOS",
+      "title": "Domine a Inteligência Artificial <span class=\"highlight-orange\">do zero absoluto</span>, sem complicação.",
+      "lead": "Descubra como destravar o potencial do ChatGPT e das novas IAs no seu dia a dia sem precisar entender de programação ou termos difíceis.",
+      "btn": "RECEBER MEU GUIA GRATUITO"
+    }
+  },
+  "en": {
+    "auto": {
+      "badge": "28-DAY AI CHALLENGE",
+      "title": "Discover your <span class=\"highlight-orange\">real AI level</span> and how many hours you can save.",
+      "lead": "Take the 2-minute hands-on diagnostic to unlock your 15-minute daily micro-lessons with <strong>ChatGPT, Claude, Gemini, Midjourney</strong> and workflows on Educly.",
+      "btn": "START LEVEL TEST"
+    },
+    "checkout": {
+      "badge": "INDIVIDUAL PRODUCTIVITY & CAREER",
+      "title": "Eliminate repetitive tasks and work <span class=\"highlight-orange\">10x faster</span> with AI.",
+      "lead": "Pinpoint daily manual bottlenecks and receive an actionable roadmap to master leading generative AI tools within 48 hours.",
+      "btn": "ACCELERATE MY WORKFLOW"
+    },
+    "whatsapp": {
+      "badge": "B2B CORPORATE TRAINING & SCALE",
+      "title": "Enterprise AI Diagnostic: Boost your team's <span class=\"highlight-orange\">operational efficiency</span>.",
+      "lead": "Evaluate team digital readiness, eliminate workflow friction, and get a tailored enterprise proposal with centralized admin analytics.",
+      "btn": "START TEAM DIAGNOSTIC"
+    },
+    "lead": {
+      "badge": "FREE STARTER KIT • ZERO TO HERO",
+      "title": "Master Artificial Intelligence <span class=\"highlight-orange\">from absolute zero</span>, jargon-free.",
+      "lead": "Discover how to unlock everyday AI without needing any technical jargon or coding skills, accompanied by high-converting prompt packs.",
+      "btn": "GET MY FREE GUIDE"
+    }
+  },
+  "es": {
+    "auto": {
+      "badge": "RETO DE 28 DÍAS DE IA",
+      "title": "Descubre tu <span class=\"highlight-orange\">nivel real de IA</span> y cuántas horas puedes ahorrar.",
+      "lead": "Realiza el test práctico de 2 minutos para recibir tu plan de microlecciones de 15 minutos diarios con <strong>ChatGPT, Claude, Gemini, Midjourney</strong> en Educly.",
+      "btn": "INICIAR TEST DE NIVEL"
+    },
+    "checkout": {
+      "badge": "PRODUCTIVIDAD INDIVIDUAL & CARRERA",
+      "title": "Elimina tareas repetitivas y trabaja <span class=\"highlight-orange\">10x más rápido</span> con IA.",
+      "lead": "Identifica los cuellos de botella de tu rutina y obtén un plan práctico para automatizar procesos clave en menos de 48 horas.",
+      "btn": "ACELERAR MI RUTINA"
+    },
+    "whatsapp": {
+      "badge": "CAPACITACIÓN CORPORATIVA & EQUIPOS",
+      "title": "Diagnóstico de IA para Empresas: Multiplica la <span class=\"highlight-orange\">eficiencia de tu equipo</span>.",
+      "lead": "Mide el nivel de adopción tecnológica de tu empresa y recibe una propuesta corporativa personalizada con panel de seguimiento.",
+      "btn": "EVALUAR MI EQUIPO"
+    },
+    "lead": {
+      "badge": "GUÍA PRÁCTICA GRATIS • PRIMEROS PASOS",
+      "title": "Domina la Inteligencia Artificial <span class=\"highlight-orange\">desde cero</span> y sin tecnicismos.",
+      "lead": "Aprende a usar ChatGPT y las herramientas líderes de IA para simplificar tu trabajo sin necesidad de conocimientos técnicos previos.",
+      "btn": "OBTENER GUÍA GRATIS"
+    }
+  },
+  "fr": {
+    "auto": {
+      "badge": "DÉFI IA 28 JOURS",
+      "title": "Découvrez votre <span class=\"highlight-orange\">vrai niveau en IA</span> et le temps que vous pouvez économiser.",
+      "lead": "Faites le test de 2 minutes pour obtenir votre plan de micro-leçons quotidiennes de 15 minutes avec <strong>ChatGPT, Claude, Gemini, Midjourney</strong>.",
+      "btn": "COMMENCER LE TEST"
+    },
+    "checkout": {
+      "badge": "PRODUCTIVITÉ INDIVIDUELLE & CARRIÈRE",
+      "title": "Supprimez les tâches répétitives et travaillez <span class=\"highlight-orange\">10x plus vite</span> avec l'IA.",
+      "lead": "Identifiez les blocages de votre quotidien et maîtrisez les meilleurs outils d'IA générative en moins de 48 heures.",
+      "btn": "BOOSTER MON TRAVAIL"
+    },
+    "whatsapp": {
+      "badge": "FORMATION ENTREPRISE & PERFORMANCE",
+      "title": "Diagnostic IA pour Entreprises : Augmentez <span class=\"highlight-orange\">l'efficacité opérationnelle</span> de votre équipe.",
+      "lead": "Évaluez la maturité numérique de vos collaborateurs et recevez une proposition sur mesure avec tableau de bord dédié.",
+      "btn": "LANCER LE DIAGNOSTIC ÉQUIPE"
+    },
+    "lead": {
+      "badge": "GUIDE GRATUIT • PREMIERS PAS",
+      "title": "Maîtrisez l'IA <span class=\"highlight-orange\">de zéro</span>, simplement et sans jargon.",
+      "lead": "Découvrez comment exploiter ChatGPT facilement pour vos tâches courantes sans aucune compétence technique préalable.",
+      "btn": "RECEVOIR MON GUIDE GRATUIT"
+    }
+  },
+  "de": {
+    "auto": {
+      "badge": "28-TAGE KI-CHALLENGE",
+      "title": "Finden Sie Ihr <span class=\"highlight-orange\">wahres KI-Niveau</span> heraus und wie viel Zeit Sie sparen können.",
+      "lead": "Machen Sie den 2-minütigen Test für Ihren Plan täglicher 15-Minuten-Mikrolektionen mit <strong>ChatGPT, Claude, Gemini, Midjourney</strong>.",
+      "btn": "TEST JETZT STARTEN"
+    },
+    "checkout": {
+      "badge": "PRODUKTIVITÄT & KARRIERE",
+      "title": "Beseitigen Sie Routineaufgaben und arbeiten Sie <span class=\"highlight-orange\">10x schneller</span> mit KI.",
+      "lead": "Identifizieren Sie tägliche Engpässe und erhalten Sie einen praxisnahen Leitfaden für führende KI-Tools in 48 Stunden.",
+      "btn": "ARBEITSABLAUF BESCHLEUNIGEN"
+    },
+    "whatsapp": {
+      "badge": "UNTERNEHMENSTRAINING & SKALIERUNG",
+      "title": "Unternehmens-KI-Diagnose: Steigern Sie die <span class=\"highlight-orange\">operative Effizienz</span> Ihres Teams.",
+      "lead": "Messen Sie den KI-Reifegrad Ihrer Mitarbeiter und erhalten Sie ein maßgeschneidertes Firmenangebot inklusive Dashboard.",
+      "btn": "TEAM-DIAGNOSE STARTEN"
+    },
+    "lead": {
+      "badge": "KOSTENLOSER LEITFADEN • ERSTE SCHRITTE",
+      "title": "Meistern Sie KI <span class=\"highlight-orange\">von Grund auf</span> ohne Fachchinesisch.",
+      "lead": "Erfahren Sie, wie Sie ChatGPT und moderne KI-Assistenten mühelos in Ihren Alltag integrieren – ohne Vorkenntnisse.",
+      "btn": "LEITFADEN KOSTENLOS ERHALTEN"
+    }
+  }
+};
+
   // -------------------------------------------------------------------------
   // DICIONÁRIO DE TRADUÇÃO DAS TELAS ESTÁTICAS E LABELS
   // -------------------------------------------------------------------------
@@ -1696,14 +1830,20 @@ document.addEventListener('DOMContentLoaded', () => {
     setText('simBtnWpp', t.simB2b);
     setText('simBtnLead', t.simLead);
 
-    setText('tIntroBadge', t.introBadge);
-    setText('tIntroTitle', t.introTitle);
-    setText('tIntroLead', t.introLead);
+    // Obtém cópia específica da trilha ativa
+    const modeKey = forcedMode || 'auto';
+    const trackSet = (introTrackCopies[currentLang] && introTrackCopies[currentLang][modeKey]) 
+      || (introTrackCopies.pt && introTrackCopies.pt[modeKey]) 
+      || { badge: t.introBadge, title: t.introTitle, lead: t.introLead, btn: t.btnStart };
+
+    setText('tIntroBadge', trackSet.badge);
+    setText('tIntroTitle', trackSet.title);
+    setText('tIntroLead', trackSet.lead);
     setText('tIntroProof', t.introProof);
     setText('tChip1', t.chip1);
     setText('tChip2', t.chip2);
     setText('tChip3', t.chip3);
-    setText('tBtnStart', t.btnStart);
+    setText('tBtnStart', trackSet.btn);
     setText('tIntroSecure', t.introSecure);
 
     setText('tProcH3', t.procH3);
@@ -1756,52 +1896,41 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
       forcedMode = btn.dataset.mode;
 
-      // Limpa classes de tema anteriores
+      // Limpa classes de tema anteriores e aplica o novo tema correspondente
       document.body.classList.remove('theme-educly-1', 'theme-swiss-2', 'theme-dark-3', 'theme-aurora-4');
 
       if (forcedMode === 'auto') {
-        // TEMA 1: Educly Autoral Oficial + Ramificação Dinâmica iniciada na Pergunta 1
         document.body.classList.add('theme-educly-1');
         branchProfile = null;
         sessionData.profile = null;
-        sessionData.answers = {};
-        currentStep = 1;
-        if (screenIntro) screenIntro.classList.remove('active');
-        if (progressModule) progressModule.style.display = 'block';
-        renderCurrentQuestion();
       } else if (forcedMode === 'checkout') {
-        // TEMA 2: Swiss Minimalist & Bento + Direto nas perguntas da Trilha B2C
         document.body.classList.add('theme-swiss-2');
         branchProfile = 'b2c';
         sessionData.profile = 'b2c';
-        currentStep = 2;
-        if (screenIntro) screenIntro.classList.remove('active');
-        if (progressModule) progressModule.style.display = 'block';
-        renderCurrentQuestion();
       } else if (forcedMode === 'whatsapp') {
-        // TEMA 3: Dark OLED Kinetic Learning + Direto nas perguntas da Trilha B2B
         document.body.classList.add('theme-dark-3');
         branchProfile = 'b2b';
         sessionData.profile = 'b2b';
-        currentStep = 2;
-        if (screenIntro) screenIntro.classList.remove('active');
-        if (progressModule) progressModule.style.display = 'block';
-        renderCurrentQuestion();
       } else if (forcedMode === 'lead') {
-        // TEMA 4: Aurora Tech Glass + Direto nas perguntas da Trilha Lead
         document.body.classList.add('theme-aurora-4');
         branchProfile = 'lead';
         sessionData.profile = 'lead';
-        currentStep = 2;
-        if (screenIntro) screenIntro.classList.remove('active');
-        if (progressModule) progressModule.style.display = 'block';
-        renderCurrentQuestion();
       }
-      
-      // Se já estiver na tela de resultado, atualiza imediatamente
-      if (currentStep === 6) {
-        showFinalResultView();
-      }
+
+      sessionData.answers = {};
+
+      // SEMPRE abre na interface inicial (Passo 0 / Hero Intro)
+      currentStep = 0;
+      if (progressModule) progressModule.style.display = 'none';
+      if (screenQuestion) screenQuestion.classList.remove('active');
+      if (screenProcessing) screenProcessing.classList.remove('active');
+      const allResults = [document.getElementById('resultCheckout'), document.getElementById('resultWhatsApp'), document.getElementById('resultLead')];
+      allResults.forEach(r => { if (r) { r.style.display = 'none'; r.classList.remove('active'); } });
+
+      if (screenIntro) screenIntro.classList.add('active');
+
+      // Aplica a copy correspondente à trilha e idioma atuais
+      applyLanguage(currentLang);
     });
   });
 
@@ -1824,10 +1953,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnStartQuiz = document.getElementById('btnStartQuiz');
   if (btnStartQuiz) {
     btnStartQuiz.addEventListener('click', () => {
-      currentStep = 1;
       sessionData.startedAt = new Date().toISOString();
       if (screenIntro) screenIntro.classList.remove('active');
       if (progressModule) progressModule.style.display = 'block';
+
+      if (forcedMode === 'auto') {
+        // Ramificação Dinâmica começa da Pergunta 1 para escolher o caminho
+        currentStep = 1;
+      } else {
+        // Trilhas específicas (B2C, B2B, Lead) já entram direto nas perguntas daquela vertente
+        currentStep = 2;
+      }
       renderCurrentQuestion();
     });
   }
