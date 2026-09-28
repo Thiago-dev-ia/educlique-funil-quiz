@@ -1,0 +1,16 @@
+# Dependências e caches
+node_modules/
+.next/
+dist/
+out/
+.env*
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Backups ou arquivos temporários
+*.tmp
+*.bak

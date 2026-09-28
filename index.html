@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Educly — Teste de Nível de IA & Desafio de 28 Dias | ChatGPT, Claude e IA na Prática</title>
+  <meta name="description" content="Descubra seu nível de maturidade em Inteligência Artificial e receba seu plano personalizado de 28 dias do Educly.app para dominar ChatGPT, Claude, Midjourney e economizar até 20 horas por semana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="educly-light-body">
+
+  <!-- ======================================================== -->
+  <!-- HEADER LIMPO OFICIAL (LOGO + SELETOR DE IDIOMA ATIVO)   -->
+  <!-- ======================================================== -->
+  <header class="educly-clean-header">
+    <div class="header-inner-row">
+      
+      <!-- Logotipo Oficial Educly -->
+      <a href="https://educly.app" class="brand-link-official" aria-label="Educly Home">
+        <img src="assets/logoLanding-ginAp5wP.png" alt="Educly" class="official-logo-img">
+      </a>
+
+      <!-- Seletor de Idioma que Traduz Dinamicamente -->
+      <div class="header-right-side">
+        <div class="lang-selector-container">
+          <button type="button" class="lang-selector-pill" id="btnLangToggle" aria-label="Alterar Idioma">
+            <i class="fas fa-globe lang-globe"></i>
+            <span id="currentLangLabel">PT</span>
+            <i class="fas fa-chevron-down lang-chevron" id="chevronLang"></i>
+          </button>
+          
+          <div class="lang-dropdown-card" id="langDropdown" style="display: none;">
+            <button type="button" class="lang-btn-opt active" data-lang="pt">Português <i class="fas fa-check"></i></button>
+            <button type="button" class="lang-btn-opt" data-lang="en">English</button>
+            <button type="button" class="lang-btn-opt" data-lang="es">Español</button>
+            <button type="button" class="lang-btn-opt" data-lang="fr">Français</button>
+            <button type="button" class="lang-btn-opt" data-lang="de">Deutsch</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Barra de Simulação das 3 Vertentes (Para testes rápidos) -->
+    <div class="simulator-pills-bar">
+      <span class="sim-label" id="i18nSimLabel"><i class="fas fa-code-branch"></i> Trilha Ativa:</span>
+      <button type="button" class="sim-opt-btn active" data-mode="auto" id="simBtnAuto">Ramificação Dinâmica</button>
+      <button type="button" class="sim-opt-btn" data-mode="checkout" id="simBtnCheckout">1. Trilha B2C (Checkout)</button>
+      <button type="button" class="sim-opt-btn" data-mode="whatsapp" id="simBtnWpp">2. Trilha B2B (WhatsApp)</button>
+      <button type="button" class="sim-opt-btn" data-mode="lead" id="simBtnLead">3. Trilha Lead (Guia)</button>
+    </div>
+  </header>
+
+  <!-- ============================================== -->
+  <!-- MAIN QUIZ FUNNEL VIEWPORT                      -->
+  <!-- ============================================== -->
+  <main class="quiz-main-layout">
+    <div class="quiz-container-box" id="quizContainer">
+
+      <!-- Progress Header (App Native Duolingo / Headway Style) -->
+      <div class="quiz-progress-module" id="progressModule" style="display: none;">
+        <div class="prog-top">
+          <button type="button" class="btn-prev-question" id="btnPrevQuestion" title="Voltar pergunta">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="prog-bar-track">
+            <div class="prog-bar-fill" id="progBarFill" style="width: 25%;"></div>
+          </div>
+          <div class="prog-streak">
+            <i class="fas fa-fire"></i>
+            <span id="streakNum">1</span>
+          </div>
+        </div>
+        <div class="prog-bottom">
+          <span class="prog-step-text" id="progStepText">Pergunta 1 de 4</span>
+          <span class="prog-tag" id="progTagText"><i class="fas fa-bolt"></i> Calibragem Educly</span>
+        </div>
+      </div>
+
+      <!-- STEP 0: INTRO HERO -->
+      <section class="quiz-view active" id="screenIntro">
+        <div class="challenge-pill">
+          <span class="pulse-orange-dot"></span>
+          <span id="tIntroBadge">DESAFIO DE 28 DIAS DE IA</span>
+        </div>
+
+        <h1 class="main-quiz-title" id="tIntroTitle">
+          Descubra qual é o seu <span class="highlight-orange">nível real de IA</span> e quanto tempo você pode economizar.
+        </h1>
+
+        <p class="main-quiz-lead" id="tIntroLead">
+          Faça o teste prático de 2 minutos para receber seu plano guiado de micro-lições diárias de 15 minutos com <strong>ChatGPT, Claude, Gemini, Midjourney</strong> e automações de fluxos de trabalho no Educly.
+        </p>
+
+        <!-- Social Proof Alunos -->
+        <div class="proof-card-official">
+          <div class="proof-avatars">
+            <div class="av" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80')"></div>
+            <div class="av" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80')"></div>
+            <div class="av" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80')"></div>
+            <div class="av-count">+50k</div>
+          </div>
+          <div class="proof-info-text" id="tIntroProof">
+            <strong>Mais de 50.000 alunos</strong> em 150 países já transformaram suas rotinas de trabalho com o método Educly.
+          </div>
+        </div>
+
+        <!-- 3 Feature Chips -->
+        <div class="feature-chips-row">
+          <div class="f-chip" id="tChip1"><i class="fas fa-clock text-orange"></i> 15 min por dia</div>
+          <div class="f-chip" id="tChip2"><i class="fas fa-certificate text-orange"></i> Certificado Oficial</div>
+          <div class="f-chip" id="tChip3"><i class="fas fa-mobile-alt text-orange"></i> Prática Direto no App</div>
+        </div>
+
+        <button type="button" class="cancellation-funnel-orange-button btn-primary-orange" id="btnStartQuiz">
+          <span id="tBtnStart">COMEÇAR TESTE DE NÍVEL</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <div class="quiz-secure-tag" id="tIntroSecure">
+          <i class="fas fa-lock"></i> Avaliação confidencial • Resultado imediato na tela
+        </div>
+      </section>
+
+      <!-- PERGUNTA DINÂMICA CONTAINER (RENDERIZADA VIA RAMIFICAÇÃO) -->
+      <section class="quiz-view" id="screenQuestion">
+        <div class="view-header">
+          <span class="v-eyebrow" id="qEyebrow">Etapa 1 de 4 • Ponto de Partida</span>
+          <h2 class="v-title" id="qTitle">Título da Pergunta</h2>
+          <p class="v-desc" id="qDesc">Descrição da Pergunta</p>
+        </div>
+
+        <div class="choices-stack" id="choicesContainer">
+          <!-- Renderizado via JS com base na ramificação -->
+        </div>
+      </section>
+
+      <!-- PROCESSING SCREEN -->
+      <section class="quiz-view" id="screenProcessing">
+        <div class="proc-card-inner">
+          <div class="proc-spinner-box">
+            <div class="spinner-circle-pulse"></div>
+            <i class="fas fa-sparkles spinner-sparkle"></i>
+          </div>
+
+          <h3 class="proc-h3" id="tProcH3">Montando sua Trilha Educly...</h3>
+          <p class="proc-p" id="tProcP">Calculando seu nível de maturidade em IA e gerando sua projeção de economia de horas.</p>
+
+          <div class="proc-checklist">
+            <div class="proc-step-line active" id="p1"><i class="fas fa-check-circle"></i> <span id="tProc1">Analisando perfil e área de atuação...</span></div>
+            <div class="proc-step-line" id="p2"><i class="fas fa-circle-notch fa-spin"></i> <span id="tProc2">Selecionando os prompts e templates prioritários...</span></div>
+            <div class="proc-step-line" id="p3"><i class="far fa-circle"></i> <span id="tProc3">Gerando plano de 28 dias personalizado...</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- RESULTADO VERTENTE 1: CHECKOUT DIRETO EDUCLY   -->
+      <!-- ============================================== -->
+      <section class="quiz-view result-wrapper" id="resultCheckout">
+        <div class="result-badge-top">
+          <i class="fas fa-award"></i> <span id="tRes1Badge">RESULTADO: SEU PLANO DE 28 DIAS ESTÁ PRONTO</span>
+        </div>
+
+        <h2 class="result-h2" id="tRes1Title">
+          Você tem potencial para economizar até <span class="highlight-orange">16 horas por semana</span> com IA.
+        </h2>
+
+        <p class="result-p" id="tRes1Lead">
+          Com base nas suas respostas, você está no perfil ideal para o <strong>Desafio de 28 Dias do Educly</strong>. Em apenas 15 minutos por dia, você vai dominar ChatGPT, Claude, prompts avançados e automações práticas.
+        </p>
+
+        <!-- Benchmark Card Comparison (App Style) -->
+        <div class="comp-box-grid">
+          <div class="comp-panel comp-before">
+            <span class="comp-tag" id="tCompBeforeTag">HOJE (Sem Educly)</span>
+            <ul class="comp-items">
+              <li><i class="fas fa-times text-red"></i> <span id="tCompB1">Respostas genéricas do ChatGPT</span></li>
+              <li><i class="fas fa-times text-red"></i> <span id="tCompB2">Horas perdidas em tarefas manuais</span></li>
+              <li><i class="fas fa-times text-red"></i> <span id="tCompB3">Insegurança com novas ferramentas</span></li>
+            </ul>
+          </div>
+          <div class="comp-panel comp-after">
+            <span class="comp-tag tag-success" id="tCompAfterTag">EM 28 DIAS (Com Educly)</span>
+            <ul class="comp-items">
+              <li><i class="fas fa-check text-green"></i> <span id="tCompA1">Prompts profissionais calibrados</span></li>
+              <li><i class="fas fa-check text-green"></i> <span id="tCompA2">10x mais rapidez em relatórios e textos</span></li>
+              <li><i class="fas fa-check text-green"></i> <span id="tCompA3">Certificado de IA para o LinkedIn</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Official Educly Pricing Offer Card -->
+        <div class="pricing-card-box">
+          <div class="pricing-head">
+            <span class="badge-promo-orange" id="tPricingBadge">OFERTA DE BOAS-VINDAS DO QUIZ</span>
+            <h3 id="tPricingTitle">Plano Premium Educly.app</h3>
+            <p id="tPricingSub">Acesso completo a todas as trilhas, prompts, simulados práticos e certificado.</p>
+          </div>
+
+          <div class="pricing-values-row">
+            <div class="vals-left">
+              <span class="old-price" id="tPriceOld">De R$ 197</span>
+              <div class="current-price">
+                <span class="cur" id="tPriceCur">R$</span>
+                <span class="big-num" id="tPriceVal">47</span>
+                <span class="cents">,00</span>
+              </div>
+              <span class="note-payment" id="tPriceNote">Pagamento único ou plano promocional</span>
+            </div>
+            <div class="countdown-badge">
+              <i class="fas fa-stopwatch"></i>
+              <span><span id="tCountdownLabel">Vagas reservadas por:</span> <strong id="countdownTimer">14:59</strong></span>
+            </div>
+          </div>
+
+          <div class="features-list-card">
+            <div class="feat-item"><i class="fas fa-check text-orange"></i> <span id="tFeat1"><strong>Desafio Guiado de 28 Dias:</strong> 1 lição prática por dia.</span></div>
+            <div class="feat-item"><i class="fas fa-check text-orange"></i> <span id="tFeat2"><strong>Biblioteca com +1.200 Prompts Prontos:</strong> Só copiar e colar.</span></div>
+            <div class="feat-item"><i class="fas fa-check text-orange"></i> <span id="tFeat3"><strong>Treinamento ChatGPT + Claude + Gemini + Midjourney.</strong></span></div>
+            <div class="feat-item"><i class="fas fa-check text-orange"></i> <span id="tFeat4"><strong>Certificado Oficial Reconhecido no LinkedIn.</strong></span></div>
+          </div>
+
+          <!-- Checkout CTA -->
+          <a href="https://educly.app/?src=quiz_direto" target="_blank" class="cancellation-funnel-orange-button btn-checkout-action" id="btnGoToCheckout">
+            <span id="tBtnCheckout">QUERO MEU ACESSO COM DESCONTO</span>
+            <i class="fas fa-lock"></i>
+          </a>
+
+          <div class="trust-guarantee-row">
+            <span><i class="fas fa-shield-alt text-green"></i> <span id="tGuar1">Garantia Incondicional de 7 Dias</span></span>
+            <span><i class="fas fa-bolt text-orange"></i> <span id="tGuar2">Acesso Imediato no Celular e PC</span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- RESULTADO VERTENTE 2: WHATSAPP HIGH-TICKET B2B -->
+      <!-- ============================================== -->
+      <section class="quiz-view result-wrapper" id="resultWhatsApp">
+        <div class="result-badge-top badge-b2b-color">
+          <i class="fas fa-building"></i> <span id="tRes2Badge">QUALIFICAÇÃO: PROGRAMA CORPORATIVO EDUCLY</span>
+        </div>
+
+        <h2 class="result-h2" id="tRes2Title">
+          Sua empresa está qualificada para o <span class="highlight-orange">Educly Enterprise & Teams</span>
+        </h2>
+
+        <p class="result-p" id="tRes2Lead">
+          Identificamos uma oportunidade estratégica de ganho de eficiência corporativa. Preparamos uma demonstração exclusiva com métricas de retenção e capacitação de equipes com IA.
+        </p>
+
+        <!-- Executive Briefing Card -->
+        <div class="exec-brief-card">
+          <div class="brief-top">
+            <span class="code-tag"><i class="fas fa-terminal"></i> <span id="tB2bTag">DIAGNÓSTICO EXECUTIVO ALOCADO</span></span>
+            <span class="status-approved"><i class="fas fa-check-circle"></i> <span id="tB2bStatus">Perfil Aprovado</span></span>
+          </div>
+          <div class="brief-grid">
+            <div class="b-cell">
+              <span class="bc-lbl" id="tB2bLbl1">Perfil Declarado:</span>
+              <strong class="bc-val" id="b2bModel">Líder / Empresa (Treinamento de Equipe)</strong>
+            </div>
+            <div class="b-cell">
+              <span class="bc-lbl" id="tB2bLbl2">Tamanho do Time:</span>
+              <strong class="bc-val text-orange" id="b2bTeam">5 a 20 Colaboradores</strong>
+            </div>
+            <div class="b-cell">
+              <span class="bc-lbl" id="tB2bLbl3">Gargalo Crítico:</span>
+              <strong class="bc-val" id="b2bPain">Automação de Processos & Tempo</strong>
+            </div>
+            <div class="b-cell">
+              <span class="bc-lbl" id="tB2bLbl4">Formato Recomendado:</span>
+              <strong class="bc-val text-green" id="b2bFormat">Treinamento In-Company + Painel de Gestão</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Executive Direct CTA -->
+        <div class="wpp-official-box">
+          <div class="wpp-box-head">
+            <div class="wpp-circle-avatar"><i class="fab fa-whatsapp"></i></div>
+            <div class="wpp-info">
+              <h4 id="tWppTitle">Falar com o Especialista Educly</h4>
+              <p id="tWppDesc">Agende uma sessão estratégica rápida de 15 minutos para ver o painel corporativo em funcionamento.</p>
+            </div>
+          </div>
+
+          <a href="#" target="_blank" class="btn-whatsapp-action" id="btnGoToWhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span id="tBtnWpp">SOLICITAR DEMONSTRAÇÃO VIA WHATSAPP</span>
+          </a>
+
+          <div class="wpp-speed-note">
+            <i class="fas fa-check-double text-green"></i> <span id="tWppSpeed">Atendimento executivo direto • Sem filas</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- RESULTADO VERTENTE 3: ISCA DIGITAL (LEAD GUIA) -->
+      <!-- ============================================== -->
+      <section class="quiz-view result-wrapper" id="resultLead">
+        <div class="result-badge-top badge-lead-color">
+          <i class="fas fa-gift"></i> <span id="tRes3Badge">MATERIAL COMPLETO LIBERADO</span>
+        </div>
+
+        <h2 class="result-h2" id="tRes3Title">
+          Receba seu <span class="highlight-orange">Guia de 100 Prompts do Educly</span> + Diagnóstico Detalhado
+        </h2>
+
+        <p class="result-p" id="tRes3Lead">
+          Compilamos os 100 prompts mais poderosos de ChatGPT e Claude que os melhores profissionais usam para cortar tarefas diárias pela metade. Insira seus dados para receber o PDF gratuitamente no seu WhatsApp e E-mail.
+        </p>
+
+        <!-- Lead Form -->
+        <div class="lead-form-panel">
+          <form id="leadCaptureForm" onsubmit="return false;">
+            <div class="form-field">
+              <label for="leadName"><i class="fas fa-user text-orange"></i> <span id="tLeadLblName">Nome Completo:</span></label>
+              <input type="text" id="leadName" placeholder="Ex: Felipe Silveira" required>
+            </div>
+
+            <div class="form-field">
+              <label for="leadEmail"><i class="fas fa-envelope text-orange"></i> <span id="tLeadLblEmail">Seu Melhor E-mail:</span></label>
+              <input type="email" id="leadEmail" placeholder="felipe@exemplo.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="leadPhone"><i class="fab fa-whatsapp text-orange"></i> <span id="tLeadLblPhone">WhatsApp com DDD (Para receber o link instantâneo):</span></label>
+              <input type="tel" id="leadPhone" placeholder="(11) 98765-4321" required>
+            </div>
+
+            <button type="submit" class="cancellation-funnel-orange-button btn-lead-action" id="btnSubmitLead">
+              <i class="fas fa-file-download"></i>
+              <span id="tBtnLead">RECEBER GUIA GRATUITO + PLANO DE IA</span>
+            </button>
+          </form>
+
+          <div class="lead-success-panel" id="leadSuccessFeedback" style="display: none;">
+            <div class="lead-success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3 id="tLeadSuccessH3">Diagnóstico enviado com sucesso!</h3>
+            <p id="tLeadSuccessP">O link do seu Guia de Prompts já foi despachado para seu WhatsApp e e-mail. Enquanto isso, experimente a primeira aula interativa do Educly:</p>
+            <a href="https://educly.app" target="_blank" class="btn-demo-start">
+              <i class="fas fa-play"></i> <span id="tBtnDemo">Iniciar Desafio no Educly.app</span>
+            </a>
+          </div>
+
+          <div class="lead-safe-note" id="tLeadSafe">
+            <i class="fas fa-shield-alt"></i> Seus dados estão 100% seguros sob a LGPD. Não enviamos spam.
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- BOTÃO FLUTUANTE DA CENTRAL DE ADMINISTRAÇÃO / LEADS      -->
+  <!-- ======================================================== -->
+  <button type="button" class="btn-admin-floating" id="btnOpenAdmin" title="Abrir Central de Leads & Dados em Tempo Real">
+    <i class="fas fa-database"></i>
+    <span>Painel de Leads (Demo)</span>
+    <span class="leads-counter-pill" id="leadsCounterBadge">0</span>
+  </button>
+
+  <!-- MODAL DO PAINEL DE LEADS / CENTRAL DE DADOS -->
+  <div class="admin-modal-backdrop" id="adminModal" style="display: none;">
+    <div class="admin-modal-card">
+      <div class="admin-modal-header">
+        <div class="admin-title-box">
+          <i class="fas fa-server text-orange"></i>
+          <div>
+            <h3>Central de Leads & Dados Coletados</h3>
+            <span class="admin-sub">Dados capturados em tempo real (Armazenamento Local + Payload Webhook)</span>
+          </div>
+        </div>
+        <button type="button" class="btn-close-admin" id="btnCloseAdmin">&times;</button>
+      </div>
+
+      <div class="admin-modal-body">
+        
+        <!-- Summary Cards -->
+        <div class="admin-stats-row">
+          <div class="astat-card">
+            <span class="astat-num" id="astatTotal">0</span>
+            <span class="astat-lbl">Total de Respostas</span>
+          </div>
+          <div class="astat-card">
+            <span class="astat-num text-orange" id="astatB2C">0</span>
+            <span class="astat-lbl">B2C Checkout</span>
+          </div>
+          <div class="astat-card">
+            <span class="astat-num text-green" id="astatB2B">0</span>
+            <span class="astat-lbl">B2B WhatsApp</span>
+          </div>
+          <div class="astat-card">
+            <span class="astat-num text-blue" id="astatLead">0</span>
+            <span class="astat-lbl">Iscas Digitais</span>
+          </div>
+        </div>
+
+        <!-- Leads Table -->
+        <div class="admin-table-wrap">
+          <table class="admin-leads-table">
+            <thead>
+              <tr>
+                <th>Data / Hora</th>
+                <th>Trilha / Vertente</th>
+                <th>Contato / Identificação</th>
+                <th>Respostas / Score</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="adminLeadsTbody">
+              <tr class="empty-row">
+                <td colspan="5">Nenhum dado capturado ainda. Complete o teste para ver os dados gerados em tempo real!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Technical Payload Inspector -->
+        <div class="admin-payload-box">
+          <div class="payload-header">
+            <span><i class="fas fa-code"></i> Payload JSON para Webhook (Supabase / CRM):</span>
+            <button type="button" class="btn-copy-payload" id="btnCopyPayload"><i class="far fa-copy"></i> Copiar JSON</button>
+          </div>
+          <pre class="json-code-viewer" id="jsonViewer">// Faça o quiz para gerar o payload JSON estruturado...</pre>
+        </div>
+
+      </div>
+
+      <div class="admin-modal-footer">
+        <button type="button" class="btn-clear-leads" id="btnClearLeads"><i class="fas fa-trash-alt"></i> Limpar Dados</button>
+        <button type="button" class="btn-done-admin" id="btnDoneAdmin">Fechar Painel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Bottom Footer Oficial Light -->
+  <footer class="official-educly-footer">
+    <div class="footer-wrap">
+      <div class="footer-copyright" id="tFooterCopy">
+        &copy; 2026 Educly.app — Todos os direitos reservados. Plataforma de micro-aprendizagem de Inteligência Artificial.
+      </div>
+      <div class="footer-nav-links">
+        <a href="contato.html" id="tFoot1">Contato</a>
+        <span>•</span>
+        <a href="termos.html" id="tFoot2">Termos de Uso</a>
+        <span>•</span>
+        <a href="privacidade.html" id="tFoot3">Privacidade</a>
+        <span>•</span>
+        <a href="cancelamento.html" id="tFoot4">Cancelamento</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
