@@ -170,225 +170,1226 @@ document.addEventListener('DOMContentLoaded', () => {
     // RAMIFICAÇÃO 1: VERTENTE B2C (Foco: Produtividade Individual, Ferramentas, Ritmo)
     b2c: [
       {
-        id: 'b2c_q2',
-        pt: {
-          eyebrow: 'Etapa 2 de 4 • Gargalo de Produtividade',
-          title: 'Qual tarefa manual mais consome o seu tempo no trabalho hoje?',
-          desc: 'Identificamos os pontos críticos que o Educly vai automatizar nas primeiras 48h:',
-          options: [
-            { id: 'reports', icon: 'fa-file-alt', title: 'Redação de relatórios, resumos e e-mails longos', sub: 'Passo horas ajustando tom de voz, estruturando ideias e revisando textos.' },
-            { id: 'spreadsheets', icon: 'fa-table', title: 'Análise de planilhas e conferência de dados', sub: 'Dificuldade para cruzar tabelas, criar fórmulas complexas e extrair insights.' },
-            { id: 'content', icon: 'fa-bullhorn', title: 'Criação de conteúdo, posts e apresentações visuais', sub: 'Bloqueio criativo constante e lentidão para produzir roteiros e designs.' },
-            { id: 'research', icon: 'fa-search', title: 'Pesquisa aprofundada e triagem de documentos', sub: 'Muito tempo lendo PDFs longos e procurando respostas pontuais.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 2 of 4 • Productivity Bottleneck',
-          title: 'Which manual task takes up most of your time at work today?',
-          desc: 'We identify key friction points that Educly automates within the first 48 hours:',
-          options: [
-            { id: 'reports', icon: 'fa-file-alt', title: 'Writing reports, summaries and lengthy emails', sub: 'Hours spent fine-tuning tone, organizing thoughts and editing drafts.' },
-            { id: 'spreadsheets', icon: 'fa-table', title: 'Spreadsheet analysis and data validation', sub: 'Struggling with formulas, data joins and extracting fast insights.' },
-            { id: 'content', icon: 'fa-bullhorn', title: 'Content creation, social posts and presentations', sub: 'Creative blocks and sluggish production of scripts and visual decks.' },
-            { id: 'research', icon: 'fa-search', title: 'Deep web research and document screening', sub: 'Too much time reading lengthy PDFs and finding pinpoint answers.' }
-          ]
-        }
+            "id": "b2c_q2",
+            "pt": {
+                  "eyebrow": "Etapa 2 de 4 • Gargalo de Produtividade",
+                  "title": "Qual tarefa manual mais consome o seu tempo no trabalho hoje?",
+                  "desc": "Identificamos os pontos críticos que o Educly vai automatizar nas primeiras 48h:",
+                  "options": [
+                        {
+                              "id": "reports",
+                              "icon": "fa-file-alt",
+                              "title": "Redação de relatórios, resumos e e-mails longos",
+                              "sub": "Passo horas ajustando tom de voz, estruturando ideias e revisando textos."
+                        },
+                        {
+                              "id": "spreadsheets",
+                              "icon": "fa-table",
+                              "title": "Análise de planilhas e conferência de dados",
+                              "sub": "Dificuldade para cruzar tabelas, criar fórmulas complexas e extrair insights."
+                        },
+                        {
+                              "id": "content",
+                              "icon": "fa-bullhorn",
+                              "title": "Criação de conteúdo, posts e apresentações visuais",
+                              "sub": "Bloqueio criativo constante e lentidão para produzir roteiros e designs."
+                        },
+                        {
+                              "id": "research",
+                              "icon": "fa-search",
+                              "title": "Pesquisa aprofundada e triagem de documentos",
+                              "sub": "Muito tempo lendo PDFs longos e procurando respostas pontuais."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 2 of 4 • Productivity Bottleneck",
+                  "title": "Which manual task takes up most of your time at work today?",
+                  "desc": "We identify key friction points that Educly automates within the first 48 hours:",
+                  "options": [
+                        {
+                              "id": "reports",
+                              "icon": "fa-file-alt",
+                              "title": "Writing reports, summaries and lengthy emails",
+                              "sub": "Hours spent fine-tuning tone, organizing thoughts and editing drafts."
+                        },
+                        {
+                              "id": "spreadsheets",
+                              "icon": "fa-table",
+                              "title": "Spreadsheet analysis and data validation",
+                              "sub": "Struggling with formulas, data joins and extracting fast insights."
+                        },
+                        {
+                              "id": "content",
+                              "icon": "fa-bullhorn",
+                              "title": "Content creation, social posts and presentations",
+                              "sub": "Creative blocks and sluggish production of scripts and visual decks."
+                        },
+                        {
+                              "id": "research",
+                              "icon": "fa-search",
+                              "title": "Deep web research and document screening",
+                              "sub": "Too much time reading lengthy PDFs and finding pinpoint answers."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 2 de 4 • Cuello de Botella de Productividad",
+                  "title": "¿Qué tarea manual consume más tiempo en tu trabajo actualmente?",
+                  "desc": "Identificamos los puntos clave que Educly automatizará en tus primeras 48h:",
+                  "options": [
+                        {
+                              "id": "reports",
+                              "icon": "fa-file-alt",
+                              "title": "Redacción de informes, resúmenes y correos largos",
+                              "sub": "Horas ajustando el tono de voz, estructurando ideas y revisando textos."
+                        },
+                        {
+                              "id": "spreadsheets",
+                              "icon": "fa-table",
+                              "title": "Análisis de hojas de cálculo y validación de datos",
+                              "sub": "Dificultad para cruzar tablas, crear fórmulas complejas y extraer conclusiones."
+                        },
+                        {
+                              "id": "content",
+                              "icon": "fa-bullhorn",
+                              "title": "Creación de contenido, publicaciones y presentaciones",
+                              "sub": "Bloqueo creativo constante y lentitud para generar guiones y diseños."
+                        },
+                        {
+                              "id": "research",
+                              "icon": "fa-search",
+                              "title": "Investigación profunda y revisión de documentos",
+                              "sub": "Demasiado tiempo leyendo PDFs largos y buscando datos específicos."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 2 sur 4 • Goulot d'Étranglement de Productivité",
+                  "title": "Quelle tâche manuelle vous prend le plus de temps au travail ?",
+                  "desc": "Nous identifions les points clés qu'Educly automatisera dans les premières 48h :",
+                  "options": [
+                        {
+                              "id": "reports",
+                              "icon": "fa-file-alt",
+                              "title": "Rédaction de rapports, synthèses et e-mails longs",
+                              "sub": "Des heures à ajuster le ton, structurer les idées et relire les textes."
+                        },
+                        {
+                              "id": "spreadsheets",
+                              "icon": "fa-table",
+                              "title": "Analyse de feuilles de calcul et vérification des données",
+                              "sub": "Difficultés à croiser les tableaux, créer des formules et extraire des insights."
+                        },
+                        {
+                              "id": "content",
+                              "icon": "fa-bullhorn",
+                              "title": "Création de contenu, posts et présentations visuelles",
+                              "sub": "Blocage créatif récurrent et lenteur dans la production de supports."
+                        },
+                        {
+                              "id": "research",
+                              "icon": "fa-search",
+                              "title": "Recherche approfondie et tri de documents",
+                              "sub": "Trop de temps passé à lire de longs PDF et trouver des réponses clés."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 2 von 4 • Produktivitäts-Engpass",
+                  "title": "Welche manuelle Aufgabe raubt Ihnen heute die meiste Zeit?",
+                  "desc": "Wir identifizieren die Hebel, die Educly in den ersten 48 Stunden automatisiert:",
+                  "options": [
+                        {
+                              "id": "reports",
+                              "icon": "fa-file-alt",
+                              "title": "Verfassen von Berichten, Zusammenfassungen und langen E-Mails",
+                              "sub": "Stundenlanges Feilen am Tonfall, Strukturieren von Gedanken und Korrekturlesen."
+                        },
+                        {
+                              "id": "spreadsheets",
+                              "icon": "fa-table",
+                              "title": "Tabellenanalyse und Datenabgleich",
+                              "sub": "Schwierigkeiten bei komplexen Formeln und schneller Dateninterpretation."
+                        },
+                        {
+                              "id": "content",
+                              "icon": "fa-bullhorn",
+                              "title": "Content-Erstellung, Social Posts und Präsentationen",
+                              "sub": "Kreativblockaden und schleppende Produktion von Skripten und Decks."
+                        },
+                        {
+                              "id": "research",
+                              "icon": "fa-search",
+                              "title": "Tiefgehende Recherche und Dokumentenprüfung",
+                              "sub": "Zu viel Zeitaufwand beim Lesen langer PDFs und Extrahieren von Fakten."
+                        }
+                  ]
+            }
       },
       {
-        id: 'b2c_q3',
-        pt: {
-          eyebrow: 'Etapa 3 de 4 • Ferramentas de Interesse',
-          title: 'Qual ecossistema de IA você mais precisa dominar na prática?',
-          desc: 'O método Educly foca em aplicações práticas imediatas:',
-          options: [
-            { id: 'chatgpt_claude', icon: 'fa-robot', title: 'ChatGPT Plus & Claude 3.5 Sonnet', sub: 'Prompts avançados, raciocínio lógico profundo e automações de texto.' },
-            { id: 'midjourney', icon: 'fa-palette', title: 'Midjourney & Geração Visual de Alta Fidelidade', sub: 'Imagens hiper-realistas para marcas, campanhas e materiais publicitários.' },
-            { id: 'gemini_google', icon: 'fa-google', title: 'Google Gemini integrado ao Workspace', sub: 'Conexão nativa com Docs, Sheets, Drive e fluxos corporativos.' },
-            { id: 'all_round', icon: 'fa-layer-group', title: 'Visão Geral Completa de Todas as Ferramentas', sub: 'Quero saber exatamente quando usar cada uma sem perder tempo.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 3 of 4 • Target Tools',
-          title: 'Which AI ecosystem do you need to master most urgently?',
-          desc: 'The Educly method focuses on immediate hands-on practice:',
-          options: [
-            { id: 'chatgpt_claude', icon: 'fa-robot', title: 'ChatGPT Plus & Claude 3.5 Sonnet', sub: 'Advanced prompts, deep reasoning and automated text workflows.' },
-            { id: 'midjourney', icon: 'fa-palette', title: 'Midjourney & High-Fidelity Visual Generation', sub: 'Hyper-realistic assets for brand, campaigns and presentation decks.' },
-            { id: 'gemini_google', icon: 'fa-google', title: 'Google Gemini integrated into Workspace', sub: 'Native sync with Docs, Sheets, Drive and corporate workflows.' },
-            { id: 'all_round', icon: 'fa-layer-group', title: 'Comprehensive 360° Multi-Tool Overview', sub: 'Know precisely which tool to pick without wasting minutes.' }
-          ]
-        }
+            "id": "b2c_q3",
+            "pt": {
+                  "eyebrow": "Etapa 3 de 4 • Ferramentas de Interesse",
+                  "title": "Qual ecossistema de IA você mais precisa dominar na prática?",
+                  "desc": "O método Educly foca em aplicações práticas imediatas:",
+                  "options": [
+                        {
+                              "id": "chatgpt_claude",
+                              "icon": "fa-robot",
+                              "title": "ChatGPT Plus & Claude 3.5 Sonnet",
+                              "sub": "Prompts avançados, raciocínio lógico profundo e automações de texto."
+                        },
+                        {
+                              "id": "midjourney",
+                              "icon": "fa-palette",
+                              "title": "Midjourney & Geração Visual de Alta Fidelidade",
+                              "sub": "Imagens hiper-realistas para marcas, campanhas e materiais publicitários."
+                        },
+                        {
+                              "id": "gemini_google",
+                              "icon": "fa-google",
+                              "title": "Google Gemini integrado ao Workspace",
+                              "sub": "Conexão nativa com Docs, Sheets, Drive e fluxos corporativos."
+                        },
+                        {
+                              "id": "all_round",
+                              "icon": "fa-layer-group",
+                              "title": "Visão Geral Completa de Todas as Ferramentas",
+                              "sub": "Quero saber exatamente quando usar cada uma sem perder tempo."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 3 of 4 • Target Tools",
+                  "title": "Which AI ecosystem do you need to master most urgently?",
+                  "desc": "The Educly method focuses on immediate hands-on practice:",
+                  "options": [
+                        {
+                              "id": "chatgpt_claude",
+                              "icon": "fa-robot",
+                              "title": "ChatGPT Plus & Claude 3.5 Sonnet",
+                              "sub": "Advanced prompts, deep reasoning and automated text workflows."
+                        },
+                        {
+                              "id": "midjourney",
+                              "icon": "fa-palette",
+                              "title": "Midjourney & High-Fidelity Visual Generation",
+                              "sub": "Hyper-realistic assets for brand, campaigns and presentation decks."
+                        },
+                        {
+                              "id": "gemini_google",
+                              "icon": "fa-google",
+                              "title": "Google Gemini integrated into Workspace",
+                              "sub": "Native sync with Docs, Sheets, Drive and corporate workflows."
+                        },
+                        {
+                              "id": "all_round",
+                              "icon": "fa-layer-group",
+                              "title": "Comprehensive 360° Multi-Tool Overview",
+                              "sub": "Know precisely which tool to pick without wasting minutes."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 3 de 4 • Herramientas Clave",
+                  "title": "¿Qué ecosistema de IA necesitas dominar más urgentemente?",
+                  "desc": "El método Educly se enfoca en aplicaciones prácticas e inmediatas:",
+                  "options": [
+                        {
+                              "id": "chatgpt_claude",
+                              "icon": "fa-robot",
+                              "title": "ChatGPT Plus y Claude 3.5 Sonnet",
+                              "sub": "Prompts avanzados, razonamiento lógico profundo y flujos automatizados."
+                        },
+                        {
+                              "id": "midjourney",
+                              "icon": "fa-palette",
+                              "title": "Midjourney y Generación Visual de Alta Fidelidad",
+                              "sub": "Imágenes hiperrealistas para marcas, campañas y presentaciones."
+                        },
+                        {
+                              "id": "gemini_google",
+                              "icon": "fa-google",
+                              "title": "Google Gemini integrado en Workspace",
+                              "sub": "Conexión nativa con Docs, Sheets, Drive y rutinas corporativas."
+                        },
+                        {
+                              "id": "all_round",
+                              "icon": "fa-layer-group",
+                              "title": "Visión General Completa de Todas las Herramientas",
+                              "sub": "Saber exactamente cuándo elegir cada una sin perder tiempo."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 3 sur 4 • Outils Cibles",
+                  "title": "Quel écosystème d'IA devez-vous maîtriser en priorité ?",
+                  "desc": "La méthode Educly mise sur la pratique concrète et immédiate :",
+                  "options": [
+                        {
+                              "id": "chatgpt_claude",
+                              "icon": "fa-robot",
+                              "title": "ChatGPT Plus & Claude 3.5 Sonnet",
+                              "sub": "Prompts experts, raisonnement logique avancé et flux automatisés."
+                        },
+                        {
+                              "id": "midjourney",
+                              "icon": "fa-palette",
+                              "title": "Midjourney & Création Visuelle Haute Fidélité",
+                              "sub": "Rendus photoréalistes pour marques, campagnes et présentations."
+                        },
+                        {
+                              "id": "gemini_google",
+                              "icon": "fa-google",
+                              "title": "Google Gemini intégré à Workspace",
+                              "sub": "Synchronisation directe avec Docs, Sheets, Drive et process d'équipe."
+                        },
+                        {
+                              "id": "all_round",
+                              "icon": "fa-layer-group",
+                              "title": "Vue d'Ensemble Complète de Tous les Outils",
+                              "sub": "Savoir exactement quel outil choisir sans hésiter."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 3 von 4 • Ziel-Werkzeuge",
+                  "title": "Welches KI-Ökosystem müssen Sie am dringendsten beherrschen?",
+                  "desc": "Die Educly-Methode konzentriert sich auf sofortige Praxisnähe:",
+                  "options": [
+                        {
+                              "id": "chatgpt_claude",
+                              "icon": "fa-robot",
+                              "title": "ChatGPT Plus & Claude 3.5 Sonnet",
+                              "sub": "Fortgeschrittene Prompts, logisches Schließen und Textautomatisierung."
+                        },
+                        {
+                              "id": "midjourney",
+                              "icon": "fa-palette",
+                              "title": "Midjourney & Visuelle High-End-Generierung",
+                              "sub": "Hyperrealistische Bilder für Marken, Kampagnen und Folien."
+                        },
+                        {
+                              "id": "gemini_google",
+                              "icon": "fa-google",
+                              "title": "Google Gemini integriert in Workspace",
+                              "sub": "Native Verknüpfung mit Docs, Sheets, Drive und Unternehmensabläufen."
+                        },
+                        {
+                              "id": "all_round",
+                              "icon": "fa-layer-group",
+                              "title": "Umfassender 360°-Überblick über alle Tools",
+                              "sub": "Präzise wissen, welches Tool ohne Zeitverlust eingesetzt wird."
+                        }
+                  ]
+            }
       },
       {
-        id: 'b2c_q4',
-        pt: {
-          eyebrow: 'Etapa 4 de 4 • Ritmo & Comprometimento',
-          title: 'Quanto tempo diário você pode dedicar ao Desafio de 28 Dias?',
-          desc: 'Todas as lições são micro-learning pensadas para quem tem rotina corrida:',
-          options: [
-            { id: '15min', icon: 'fa-coffee', title: '15 minutos por dia (Ritmo Ideal do App)', sub: '1 micro-aula prática pelo celular durante o café ou trajeto.' },
-            { id: '30min', icon: 'fa-laptop-code', title: '30 minutos por dia (Aplicação Imediata)', sub: 'Estudo e aplicação simultânea nos seus projetos no computador.' },
-            { id: 'turbo', icon: 'fa-fire', title: '1 hora ou mais por dia (Modo Turbo)', sub: 'Quero finalizar o desafio e receber a certificação no menor tempo possível.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 4 of 4 • Rhythm & Commitment',
-          title: 'How much daily time can you commit to the 28-Day Challenge?',
-          desc: 'All lessons are micro-learning designed for busy working professionals:',
-          options: [
-            { id: '15min', icon: 'fa-coffee', title: '15 minutes per day (Official App Pace)', sub: '1 practical bite-sized lesson on mobile over coffee or commute.' },
-            { id: '30min', icon: 'fa-laptop-code', title: '30 minutes per day (Direct Work Application)', sub: 'Hands-on practice directly inside your current workplace projects.' },
-            { id: 'turbo', icon: 'fa-fire', title: '1 hour or more per day (Turbo Speed)', sub: 'Complete the track and claim the official certificate ASAP.' }
-          ]
-        }
+            "id": "b2c_q4",
+            "pt": {
+                  "eyebrow": "Etapa 4 de 4 • Ritmo & Comprometimento",
+                  "title": "Quanto tempo diário você pode dedicar ao Desafio de 28 Dias?",
+                  "desc": "Todas as lições são micro-learning pensadas para quem tem rotina corrida:",
+                  "options": [
+                        {
+                              "id": "15min",
+                              "icon": "fa-coffee",
+                              "title": "15 minutos por dia (Ritmo Ideal do App)",
+                              "sub": "1 micro-aula prática pelo celular durante o café ou trajeto."
+                        },
+                        {
+                              "id": "30min",
+                              "icon": "fa-laptop-code",
+                              "title": "30 minutos por dia (Aplicação Imediata)",
+                              "sub": "Estudo e aplicação simultânea nos seus projetos no computador."
+                        },
+                        {
+                              "id": "turbo",
+                              "icon": "fa-fire",
+                              "title": "1 hora ou mais por dia (Modo Turbo)",
+                              "sub": "Quero finalizar o desafio e receber a certificação no menor tempo possível."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 4 of 4 • Rhythm & Commitment",
+                  "title": "How much daily time can you commit to the 28-Day Challenge?",
+                  "desc": "All lessons are micro-learning designed for busy working professionals:",
+                  "options": [
+                        {
+                              "id": "15min",
+                              "icon": "fa-coffee",
+                              "title": "15 minutes per day (Official App Pace)",
+                              "sub": "1 practical bite-sized lesson on mobile over coffee or commute."
+                        },
+                        {
+                              "id": "30min",
+                              "icon": "fa-laptop-code",
+                              "title": "30 minutes per day (Direct Work Application)",
+                              "sub": "Hands-on practice directly inside your current workplace projects."
+                        },
+                        {
+                              "id": "turbo",
+                              "icon": "fa-fire",
+                              "title": "1 hour or more per day (Turbo Speed)",
+                              "sub": "Complete the track and claim the official certificate ASAP."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 4 de 4 • Ritmo y Compromiso",
+                  "title": "¿Cuánto tiempo diario puedes dedicar al Reto de 28 Días?",
+                  "desc": "Todas las lecciones son microlearning diseñadas para agendas ocupadas:",
+                  "options": [
+                        {
+                              "id": "15min",
+                              "icon": "fa-coffee",
+                              "title": "15 minutos al día (Ritmo Ideal de la App)",
+                              "sub": "1 microlección práctica en el móvil durante el café o trayecto."
+                        },
+                        {
+                              "id": "30min",
+                              "icon": "fa-laptop-code",
+                              "title": "30 minutos al día (Aplicación Directa)",
+                              "sub": "Práctica y aplicación directa en tus proyectos de trabajo."
+                        },
+                        {
+                              "id": "turbo",
+                              "icon": "fa-fire",
+                              "title": "1 hora o más al día (Modo Turbo)",
+                              "sub": "Completar el reto y obtener la certificación en tiempo récord."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 4 sur 4 • Rythme & Engagement",
+                  "title": "Combien de temps par jour pouvez-vous consacrer au Défi de 28 Jours ?",
+                  "desc": "Toutes les leçons sont en microlearning adaptées aux rythmes intenses :",
+                  "options": [
+                        {
+                              "id": "15min",
+                              "icon": "fa-coffee",
+                              "title": "15 minutes par jour (Rythme Idéal de l'App)",
+                              "sub": "1 micro-leçon pratique sur mobile pendant une pause café."
+                        },
+                        {
+                              "id": "30min",
+                              "icon": "fa-laptop-code",
+                              "title": "30 minutes par jour (Application Directe)",
+                              "sub": "Pratique immédiate sur vos fichiers et missions professionnelles."
+                        },
+                        {
+                              "id": "turbo",
+                              "icon": "fa-fire",
+                              "title": "1 heure ou plus par jour (Mode Turbo)",
+                              "sub": "Valider le parcours et décrocher la certification au plus vite."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 4 von 4 • Tempo & Engagement",
+                  "title": "Wie viel Zeit können Sie täglich für die 28-Tage-Challenge aufwenden?",
+                  "desc": "Alle Einheiten sind Mikrolektionen für einen vollgepackten Arbeitsalltag:",
+                  "options": [
+                        {
+                              "id": "15min",
+                              "icon": "fa-coffee",
+                              "title": "15 Minuten pro Tag (Ideales App-Tempo)",
+                              "sub": "1 mundgerechte Praxiseinheit mobil beim Kaffee oder Pendeln."
+                        },
+                        {
+                              "id": "30min",
+                              "icon": "fa-laptop-code",
+                              "title": "30 Minuten pro Tag (Direkte Anwendung)",
+                              "sub": "Sofortiges Üben und Umsetzen in aktuellen Arbeitsprojekten."
+                        },
+                        {
+                              "id": "turbo",
+                              "icon": "fa-fire",
+                              "title": "1 Stunde oder mehr pro Tag (Turbo-Modus)",
+                              "sub": "Die Challenge abschließen und das Zertifikat schnellstmöglich sichern."
+                        }
+                  ]
+            }
       }
-    ],
+],
 
     // RAMIFICAÇÃO 2: VERTENTE B2B (Foco: Empresas, Equipes, Gargalos Corporativos)
     b2b: [
       {
-        id: 'b2b_q2',
-        pt: {
-          eyebrow: 'Etapa 2 de 4 • Porte Corporativo',
-          title: 'Quantos colaboradores você pretende capacitar com IA?',
-          desc: 'Isso determina o pacote de licenças e a esteira de acompanhamento executivo:',
-          options: [
-            { id: 'small', icon: 'fa-users', title: 'Pequena Equipe (3 a 10 colaboradores)', sub: 'Capacitação rápida para setores-chave como Marketing, Vendas e Suporte.' },
-            { id: 'medium', icon: 'fa-user-friends', title: 'Média Empresa (11 a 50 colaboradores)', sub: 'Múltiplos setores integrando ferramentas de produtividade e IA generativa.' },
-            { id: 'enterprise', icon: 'fa-city', title: 'Grande Porte (Mais de 50 colaboradores)', sub: 'Governança de IA, segurança de dados corporativos e métricas de ROI.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 2 of 4 • Organization Size',
-          title: 'How many team members do you intend to upskill with AI?',
-          desc: 'This calculates enterprise tier licenses and executive tracking seats:',
-          options: [
-            { id: 'small', icon: 'fa-users', title: 'Small Squad (3 to 10 team members)', sub: 'Fast upskilling for core squads like Marketing, Sales and Operations.' },
-            { id: 'medium', icon: 'fa-user-friends', title: 'Mid-Sized Team (11 to 50 team members)', sub: 'Multiple departments integrating genAI and shared workflow templates.' },
-            { id: 'enterprise', icon: 'fa-city', title: 'Enterprise (50+ team members)', sub: 'AI governance, enterprise data privacy and measurable ROI dashboards.' }
-          ]
-        }
+            "id": "b2b_q2",
+            "pt": {
+                  "eyebrow": "Etapa 2 de 4 • Porte Corporativo",
+                  "title": "Quantos colaboradores você pretende capacitar com IA?",
+                  "desc": "Isso determina o pacote de licenças e a esteira de acompanhamento executivo:",
+                  "options": [
+                        {
+                              "id": "small",
+                              "icon": "fa-users",
+                              "title": "Pequena Equipe (3 a 10 colaboradores)",
+                              "sub": "Capacitação rápida para setores-chave como Marketing, Vendas e Suporte."
+                        },
+                        {
+                              "id": "medium",
+                              "icon": "fa-user-friends",
+                              "title": "Média Empresa (11 a 50 colaboradores)",
+                              "sub": "Múltiplos setores integrando ferramentas de produtividade e IA generativa."
+                        },
+                        {
+                              "id": "enterprise",
+                              "icon": "fa-city",
+                              "title": "Grande Porte (Mais de 50 colaboradores)",
+                              "sub": "Governança de IA, segurança de dados corporativos e métricas de ROI."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 2 of 4 • Organization Size",
+                  "title": "How many team members do you intend to upskill with AI?",
+                  "desc": "This calculates enterprise tier licenses and executive tracking seats:",
+                  "options": [
+                        {
+                              "id": "small",
+                              "icon": "fa-users",
+                              "title": "Small Squad (3 to 10 team members)",
+                              "sub": "Fast upskilling for core squads like Marketing, Sales and Operations."
+                        },
+                        {
+                              "id": "medium",
+                              "icon": "fa-user-friends",
+                              "title": "Mid-Sized Team (11 to 50 team members)",
+                              "sub": "Multiple departments integrating genAI and shared workflow templates."
+                        },
+                        {
+                              "id": "enterprise",
+                              "icon": "fa-city",
+                              "title": "Enterprise (50+ team members)",
+                              "sub": "AI governance, enterprise data privacy and measurable ROI dashboards."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 2 de 4 • Tamaño del Equipo",
+                  "title": "¿A cuántos colaboradores deseas capacitar en IA?",
+                  "desc": "Esto define el paquete de licencias y el seguimiento corporativo:",
+                  "options": [
+                        {
+                              "id": "small",
+                              "icon": "fa-users",
+                              "title": "Equipo Pequeño (3 a 10 personas)",
+                              "sub": "Capacitación rápida para áreas clave como Marketing, Ventas y Operaciones."
+                        },
+                        {
+                              "id": "medium",
+                              "icon": "fa-user-friends",
+                              "title": "Mediana Empresa (11 a 50 personas)",
+                              "sub": "Múltiples departamentos integrando IA generativa y plantillas compartidas."
+                        },
+                        {
+                              "id": "enterprise",
+                              "icon": "fa-city",
+                              "title": "Gran Empresa (Más de 50 personas)",
+                              "sub": "Gobernanza de IA, privacidad de datos y paneles de ROI medible."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 2 sur 4 • Taille de l'Entreprise",
+                  "title": "Combien de collaborateurs souhaitez-vous former à l'IA ?",
+                  "desc": "Cela détermine le pack de licences et le suivi managérial :",
+                  "options": [
+                        {
+                              "id": "small",
+                              "icon": "fa-users",
+                              "title": "Petite Équipe (3 à 10 collaborateurs)",
+                              "sub": "Montée en compétences rapide pour Marketing, Ventes et Support."
+                        },
+                        {
+                              "id": "medium",
+                              "icon": "fa-user-friends",
+                              "title": "Moyenne Entreprise (11 à 50 collaborateurs)",
+                              "sub": "Plusieurs pôles intégrant l'IA générative et des process mutualisés."
+                        },
+                        {
+                              "id": "enterprise",
+                              "icon": "fa-city",
+                              "title": "Grande Entreprise (Plus de 50 collaborateurs)",
+                              "sub": "Gouvernance IA, sécurité des données et indicateurs de ROI précis."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 2 von 4 • Teamgröße",
+                  "title": "Wie viele Mitarbeiter möchten Sie in KI schulen?",
+                  "desc": "Dies bestimmt das Lizenzmodell und das Management-Dashboard:",
+                  "options": [
+                        {
+                              "id": "small",
+                              "icon": "fa-users",
+                              "title": "Kleines Team (3 bis 10 Mitarbeiter)",
+                              "sub": "Schnelle Qualifizierung für Kernteams wie Marketing, Vertrieb und Support."
+                        },
+                        {
+                              "id": "medium",
+                              "icon": "fa-user-friends",
+                              "title": "Mittelstand (11 bis 50 Mitarbeiter)",
+                              "sub": "Mehrere Abteilungen mit generativer KI und standardisierten Vorlagen."
+                        },
+                        {
+                              "id": "enterprise",
+                              "icon": "fa-city",
+                              "title": "Großunternehmen (Über 50 Mitarbeiter)",
+                              "sub": "KI-Governance, Datenschutz im Unternehmen und messbare ROI-Kennzahlen."
+                        }
+                  ]
+            }
       },
       {
-        id: 'b2b_q3',
-        pt: {
-          eyebrow: 'Etapa 3 de 4 • Gargalo Operacional',
-          title: 'Qual é o maior desafio atual da sua equipe em relação à IA?',
-          desc: 'Direcionaremos a demonstração do Educly Enterprise para a sua dor real:',
-          options: [
-            { id: 'lack_standard', icon: 'fa-exclamation-triangle', title: 'Falta de padrão e segurança no uso de IA', sub: 'Cada funcionário usa ferramentas por conta própria sem diretrizes ou prompts validados.' },
-            { id: 'slow_onboarding', icon: 'fa-stopwatch', title: 'Lentidão em entregas e rotinas operacionais repetitivas', sub: 'O time gasta muito tempo em tarefas mecânicas que a IA resolveria em segundos.' },
-            { id: 'resistance', icon: 'fa-user-shield', title: 'Resistência cultural e medo da tecnologia', sub: 'Colaboradores receosos ou sem saber como aplicar a IA na rotina diária.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 3 of 4 • Operational Pain',
-          title: 'What is your team’s single biggest hurdle regarding AI adoption?',
-          desc: 'We will target the executive Educly Enterprise demo directly at your bottleneck:',
-          options: [
-            { id: 'lack_standard', icon: 'fa-exclamation-triangle', title: 'No governance or standardized prompt guidelines', sub: 'Staff using ad-hoc tools without corporate data guardrails or proven templates.' },
-            { id: 'slow_onboarding', icon: 'fa-stopwatch', title: 'Slow delivery on repetitive operational routines', sub: 'Team bogged down by mechanical work that AI can streamline instantly.' },
-            { id: 'resistance', icon: 'fa-user-shield', title: 'Cultural friction and anxiety towards new tech', sub: 'Employees unsure how to practically weave AI into daily tasks.' }
-          ]
-        }
+            "id": "b2b_q3",
+            "pt": {
+                  "eyebrow": "Etapa 3 de 4 • Gargalo Operacional",
+                  "title": "Qual é o maior desafio atual da sua equipe em relação à IA?",
+                  "desc": "Direcionaremos a demonstração do Educly Enterprise para a sua dor real:",
+                  "options": [
+                        {
+                              "id": "lack_standard",
+                              "icon": "fa-exclamation-triangle",
+                              "title": "Falta de padrão e segurança no uso de IA",
+                              "sub": "Cada funcionário usa ferramentas por conta própria sem diretrizes ou prompts validados."
+                        },
+                        {
+                              "id": "slow_onboarding",
+                              "icon": "fa-stopwatch",
+                              "title": "Lentidão em entregas e rotinas operacionais repetitivas",
+                              "sub": "O time gasta muito tempo em tarefas mecânicas que a IA resolveria em segundos."
+                        },
+                        {
+                              "id": "resistance",
+                              "icon": "fa-user-shield",
+                              "title": "Resistência cultural e medo da tecnologia",
+                              "sub": "Colaboradores receosos ou sem saber como aplicar a IA na rotina diária."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 3 of 4 • Operational Pain",
+                  "title": "What is your team’s single biggest hurdle regarding AI adoption?",
+                  "desc": "We will target the executive Educly Enterprise demo directly at your bottleneck:",
+                  "options": [
+                        {
+                              "id": "lack_standard",
+                              "icon": "fa-exclamation-triangle",
+                              "title": "No governance or standardized prompt guidelines",
+                              "sub": "Staff using ad-hoc tools without corporate data guardrails or proven templates."
+                        },
+                        {
+                              "id": "slow_onboarding",
+                              "icon": "fa-stopwatch",
+                              "title": "Slow delivery on repetitive operational routines",
+                              "sub": "Team bogged down by mechanical work that AI can streamline instantly."
+                        },
+                        {
+                              "id": "resistance",
+                              "icon": "fa-user-shield",
+                              "title": "Cultural friction and anxiety towards new tech",
+                              "sub": "Employees unsure how to practically weave AI into daily tasks."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 3 de 4 • Reto Operativo",
+                  "title": "¿Cuál es el mayor obstáculo actual de tu equipo con la IA?",
+                  "desc": "Adaptaremos la propuesta de Educly Enterprise a tu necesidad real:",
+                  "options": [
+                        {
+                              "id": "lack_standard",
+                              "icon": "fa-exclamation-triangle",
+                              "title": "Falta de gobernanza y directrices estandarizadas",
+                              "sub": "Cada miembro usa herramientas dispersas sin políticas de seguridad ni prompts probados."
+                        },
+                        {
+                              "id": "slow_onboarding",
+                              "icon": "fa-stopwatch",
+                              "title": "Lentitud en tareas repetitivas y entregas mecánicas",
+                              "sub": "El equipo pierde horas en tareas que la IA resuelve en segundos."
+                        },
+                        {
+                              "id": "resistance",
+                              "icon": "fa-user-shield",
+                              "title": "Fricción cultural y miedo al cambio tecnológico",
+                              "sub": "Colaboradores con dudas sobre cómo aplicar la IA en su rutina diaria."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 3 sur 4 • Défi Opérationnel",
+                  "title": "Quel est le principal frein de votre équipe face à l'IA ?",
+                  "desc": "Nous adapterons la démo Educly Enterprise directement à votre priorité :",
+                  "options": [
+                        {
+                              "id": "lack_standard",
+                              "icon": "fa-exclamation-triangle",
+                              "title": "Absence de cadre et de prompts standardisés",
+                              "sub": "Chaque employé utilise des outils en roue libre sans charte de sécurité."
+                        },
+                        {
+                              "id": "slow_onboarding",
+                              "icon": "fa-stopwatch",
+                              "title": "Lenteur sur les tâches mécaniques et récurrentes",
+                              "sub": "Trop de temps perdu sur des opérations automatisables en un clic."
+                        },
+                        {
+                              "id": "resistance",
+                              "icon": "fa-user-shield",
+                              "title": "Résistance au changement et appréhension technique",
+                              "sub": "Équipes réticentes ou ne sachant pas par où débuter concrètement."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 3 von 4 • Operativer Engpass",
+                  "title": "Was ist die größte Hürde Ihres Teams beim Einsatz von KI?",
+                  "desc": "Wir stimmen die Educly Enterprise Demo genau auf Ihre Problemstellung ab:",
+                  "options": [
+                        {
+                              "id": "lack_standard",
+                              "icon": "fa-exclamation-triangle",
+                              "title": "Fehlende Richtlinien und ungesicherte Prompts",
+                              "sub": "Mitarbeiter nutzen Tools unkoordiniert ohne einheitliche Unternehmensstandards."
+                        },
+                        {
+                              "id": "slow_onboarding",
+                              "icon": "fa-stopwatch",
+                              "title": "Zeitverlust bei monotonen Routineabläufen",
+                              "sub": "Das Team hängt in manuellen Aufgaben fest, die KI in Sekunden lösen kann."
+                        },
+                        {
+                              "id": "resistance",
+                              "icon": "fa-user-shield",
+                              "title": "Kulturelle Vorbehalte und Unsicherheit im Umgang",
+                              "sub": "Mitarbeiter zögern oder wissen nicht, wie KI ihren Arbeitsalltag erleichtert."
+                        }
+                  ]
+            }
       },
       {
-        id: 'b2b_q4',
-        pt: {
-          eyebrow: 'Etapa 4 de 4 • Formato de Implementação',
-          title: 'Qual modelo de capacitação corporativa é mais viável para vocês?',
-          desc: 'O Educly oferece implementação sob medida com painel de progresso:',
-          options: [
-            { id: 'self_paced', icon: 'fa-mobile-screen', title: 'Acesso por App Individual com Painel de Gestão de RH', sub: 'Cada colaborador faz suas 15 min diárias no celular com métricas para a liderança.' },
-            { id: 'hybrid', icon: 'fa-chalkboard-teacher', title: 'Treinamento Híbrido (Workshop ao Vivo + Desafio 28 Dias)', sub: 'Sessão prática de abertura com especialista Educly seguida do desafio no app.' },
-            { id: 'custom_prompts', icon: 'fa-sliders', title: 'Customização de Biblioteca de Prompts Exclusivos da Empresa', sub: 'Desenvolvimento de prompts proprietários adaptados aos processos internos.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 4 of 4 • Deployment Format',
-          title: 'Which corporate rollout model best fits your company schedule?',
-          desc: 'Educly offers tailored deployment with centralized tracking dashboards:',
-          options: [
-            { id: 'self_paced', icon: 'fa-mobile-screen', title: 'Individual App Seats with Manager/HR Analytics', sub: 'Each staff member completes 15 min/day with team completion metrics.' },
-            { id: 'hybrid', icon: 'fa-chalkboard-teacher', title: 'Hybrid Onboarding (Live Kickoff + 28-Day App Access)', sub: 'Hands-on live kickoff with an Educly strategist followed by app tracks.' },
-            { id: 'custom_prompts', icon: 'fa-sliders', title: 'Proprietary Company Prompt Repository Buildout', sub: 'Custom workflows and tailored prompt vaults mapped to internal operations.' }
-          ]
-        }
+            "id": "b2b_q4",
+            "pt": {
+                  "eyebrow": "Etapa 4 de 4 • Formato de Implementação",
+                  "title": "Qual modelo de capacitação corporativa é mais viável para vocês?",
+                  "desc": "O Educly oferece implementação sob medida com painel de progresso:",
+                  "options": [
+                        {
+                              "id": "self_paced",
+                              "icon": "fa-mobile-screen",
+                              "title": "Acesso por App Individual com Painel de Gestão de RH",
+                              "sub": "Cada colaborador faz suas 15 min diárias no celular com métricas para a liderança."
+                        },
+                        {
+                              "id": "hybrid",
+                              "icon": "fa-chalkboard-teacher",
+                              "title": "Treinamento Híbrido (Workshop ao Vivo + Desafio 28 Dias)",
+                              "sub": "Sessão prática de abertura com especialista Educly seguida do desafio no app."
+                        },
+                        {
+                              "id": "custom_prompts",
+                              "icon": "fa-sliders",
+                              "title": "Customização de Biblioteca de Prompts Exclusivos da Empresa",
+                              "sub": "Desenvolvimento de prompts proprietários adaptados aos processos internos."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 4 of 4 • Deployment Format",
+                  "title": "Which corporate rollout model best fits your company schedule?",
+                  "desc": "Educly offers tailored deployment with centralized tracking dashboards:",
+                  "options": [
+                        {
+                              "id": "self_paced",
+                              "icon": "fa-mobile-screen",
+                              "title": "Individual App Seats with Manager/HR Analytics",
+                              "sub": "Each staff member completes 15 min/day with team completion metrics."
+                        },
+                        {
+                              "id": "hybrid",
+                              "icon": "fa-chalkboard-teacher",
+                              "title": "Hybrid Onboarding (Live Kickoff + 28-Day App Access)",
+                              "sub": "Hands-on live kickoff with an Educly strategist followed by app tracks."
+                        },
+                        {
+                              "id": "custom_prompts",
+                              "icon": "fa-sliders",
+                              "title": "Proprietary Company Prompt Repository Buildout",
+                              "sub": "Custom workflows and tailored prompt vaults mapped to internal operations."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 4 de 4 • Formato de Implementación",
+                  "title": "¿Qué formato de despliegue corporativo se adapta mejor a tu empresa?",
+                  "desc": "Educly ofrece planes a medida con paneles de seguimiento ejecutivo:",
+                  "options": [
+                        {
+                              "id": "self_paced",
+                              "icon": "fa-mobile-screen",
+                              "title": "Accesos Individuales con Panel de Control para RRHH",
+                              "sub": "Cada colaborador avanza 15 min al día en su móvil con métricas para líderes."
+                        },
+                        {
+                              "id": "hybrid",
+                              "icon": "fa-chalkboard-teacher",
+                              "title": "Modelo Híbrido (Taller Inicial en Vivo + Reto de 28 Días)",
+                              "sub": "Sesión práctica de arranque con experto de Educly seguida del plan en la app."
+                        },
+                        {
+                              "id": "custom_prompts",
+                              "icon": "fa-sliders",
+                              "title": "Biblioteca Personalizada de Prompts de la Empresa",
+                              "sub": "Desarrollo de flujos de trabajo propietarios según tus procesos internos."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 4 sur 4 • Format de Déploiement",
+                  "title": "Quel modèle d'intégration convient le mieux à votre organisation ?",
+                  "desc": "Educly propose une formule sur-mesure avec tableau de bord RH :",
+                  "options": [
+                        {
+                              "id": "self_paced",
+                              "icon": "fa-mobile-screen",
+                              "title": "Licences Mobiles avec Tableau de Suivi Managérial",
+                              "sub": "15 min par jour en autonomie pour chaque collaborateur avec reporting d'équipe."
+                        },
+                        {
+                              "id": "hybrid",
+                              "icon": "fa-chalkboard-teacher",
+                              "title": "Parcours Hybride (Workshop Live + Défi de 28 Jours)",
+                              "sub": "Session d'ouverture pratique avec un expert Educly suivie du parcours mobile."
+                        },
+                        {
+                              "id": "custom_prompts",
+                              "icon": "fa-sliders",
+                              "title": "Bibliothèque de Prompts Propriétaires d'Entreprise",
+                              "sub": "Conception de flux sur-mesure calibrés sur vos process internes."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 4 von 4 • Rollout-Modell",
+                  "title": "Welches Weiterbildungsmodell passt am besten zu Ihrer Organisation?",
+                  "desc": "Educly bietet maßgeschneiderte Programme mit zentralem Fortschrittsbericht:",
+                  "options": [
+                        {
+                              "id": "self_paced",
+                              "icon": "fa-mobile-screen",
+                              "title": "App-Lizenzen mit zentralem HR-Analytics-Dashboard",
+                              "sub": "Jeder Mitarbeiter lernt 15 Min/Tag mobil – mit klaren KPIs für Führungskräfte."
+                        },
+                        {
+                              "id": "hybrid",
+                              "icon": "fa-chalkboard-teacher",
+                              "title": "Hybrides Modell (Live-Kickoff-Workshop + 28-Tage-App)",
+                              "sub": "Praktischer Auftakt-Workshop mit Educly-Experten, gefolgt von der App-Challenge."
+                        },
+                        {
+                              "id": "custom_prompts",
+                              "icon": "fa-sliders",
+                              "title": "Entwicklung unternehmenseigener Prompt-Bibliotheken",
+                              "sub": "Maßgeschneiderte Workflows abgestimmt auf interne Firmenprozesse."
+                        }
+                  ]
+            }
       }
-    ],
+],
 
     // RAMIFICAÇÃO 3: VERTENTE INICIANTE / LEAD CAPTURE (Foco: Desmistificação, Segurança, Guia Prático)
     lead: [
       {
-        id: 'lead_q2',
-        pt: {
-          eyebrow: 'Etapa 2 de 4 • Nível de Conforto',
-          title: 'Qual é o seu maior receio ou dúvida ao usar ferramentas de IA?',
-          desc: 'Vamos personalizar o seu Guia de Prompts para eliminar essa insegurança:',
-          options: [
-            { id: 'complex_prompts', icon: 'fa-comments', title: 'Não sei como escrever o prompt para ter boas respostas', sub: 'Sinto que o ChatGPT só me devolve textos robóticos ou superficiais.' },
-            { id: 'privacy', icon: 'fa-lock', title: 'Medo de errar, expor dados ou parecer desatualizado', sub: 'Preocupação com segurança da informação e precisão das respostas.' },
-            { id: 'many_tools', icon: 'fa-compass', title: 'Não sei qual ferramenta usar para cada situação', sub: 'ChatGPT, Gemini, Claude, Copilot... é muita novidade ao mesmo tempo.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 2 of 4 • Comfort Level',
-          title: 'What is your biggest concern when working with AI tools?',
-          desc: 'We will curate your 100 Prompts Guide to dissolve this friction immediately:',
-          options: [
-            { id: 'complex_prompts', icon: 'fa-comments', title: 'I do not know how to prompt for high-quality answers', sub: 'Responses feel robotic, generic or unhelpful for my real problems.' },
-            { id: 'privacy', icon: 'fa-lock', title: 'Fear of making mistakes or feeling left behind', sub: 'Worries about factual accuracy, data privacy and modern relevance.' },
-            { id: 'many_tools', icon: 'fa-compass', title: 'Uncertain which tool fits each specific scenario', sub: 'ChatGPT, Gemini, Claude, Copilot... too many tools launching weekly.' }
-          ]
-        }
+            "id": "lead_q2",
+            "pt": {
+                  "eyebrow": "Etapa 2 de 4 • Nível de Conforto",
+                  "title": "Qual é o seu maior receio ou dúvida ao usar ferramentas de IA?",
+                  "desc": "Vamos personalizar o seu Guia de Prompts para eliminar essa insegurança:",
+                  "options": [
+                        {
+                              "id": "complex_prompts",
+                              "icon": "fa-comments",
+                              "title": "Não sei como escrever o prompt para ter boas respostas",
+                              "sub": "Sinto que o ChatGPT só me devolve textos robóticos ou superficiais."
+                        },
+                        {
+                              "id": "privacy",
+                              "icon": "fa-lock",
+                              "title": "Medo de errar, expor dados ou parecer desatualizado",
+                              "sub": "Preocupação com segurança da informação e precisão das respostas."
+                        },
+                        {
+                              "id": "many_tools",
+                              "icon": "fa-compass",
+                              "title": "Não sei qual ferramenta usar para cada situação",
+                              "sub": "ChatGPT, Gemini, Claude, Copilot... é muita novidade ao mesmo tempo."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 2 of 4 • Comfort Level",
+                  "title": "What is your biggest concern when working with AI tools?",
+                  "desc": "We will curate your 100 Prompts Guide to dissolve this friction immediately:",
+                  "options": [
+                        {
+                              "id": "complex_prompts",
+                              "icon": "fa-comments",
+                              "title": "I do not know how to prompt for high-quality answers",
+                              "sub": "Responses feel robotic, generic or unhelpful for my real problems."
+                        },
+                        {
+                              "id": "privacy",
+                              "icon": "fa-lock",
+                              "title": "Fear of making mistakes or feeling left behind",
+                              "sub": "Worries about factual accuracy, data privacy and modern relevance."
+                        },
+                        {
+                              "id": "many_tools",
+                              "icon": "fa-compass",
+                              "title": "Uncertain which tool fits each specific scenario",
+                              "sub": "ChatGPT, Gemini, Claude, Copilot... too many tools launching weekly."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 2 de 4 • Nivel de Confianza",
+                  "title": "¿Cuál es tu mayor duda o temor al utilizar herramientas de IA?",
+                  "desc": "Personalizaremos tu Guía de Prompts para eliminar esa barrera:",
+                  "options": [
+                        {
+                              "id": "complex_prompts",
+                              "icon": "fa-comments",
+                              "title": "No sé cómo redactar el prompt para obtener respuestas útiles",
+                              "sub": "Siento que el resultado es genérico, artificial o poco práctico."
+                        },
+                        {
+                              "id": "privacy",
+                              "icon": "fa-lock",
+                              "title": "Miedo a cometer errores o quedarme rezagado",
+                              "sub": "Inseguridad sobre la precisión de las respuestas y la privacidad de datos."
+                        },
+                        {
+                              "id": "many_tools",
+                              "icon": "fa-compass",
+                              "title": "No sé qué herramienta elegir para cada necesidad",
+                              "sub": "ChatGPT, Claude, Gemini... demasiadas opciones saliendo a la vez."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 2 sur 4 • Niveau d'Aisance",
+                  "title": "Quelle est votre principale appréhension face aux outils d'IA ?",
+                  "desc": "Nous adapterons votre Guide de Prompts pour lever ce blocage :",
+                  "options": [
+                        {
+                              "id": "complex_prompts",
+                              "icon": "fa-comments",
+                              "title": "Je ne sais pas comment formuler mes prompts efficacement",
+                              "sub": "J'obtiens souvent des réponses trop vagues ou stéréotypées."
+                        },
+                        {
+                              "id": "privacy",
+                              "icon": "fa-lock",
+                              "title": "Peur de faire des erreurs ou d'être dépassé",
+                              "sub": "Inquiétudes quant à la fiabilité des réponses et à la confidentialité."
+                        },
+                        {
+                              "id": "many_tools",
+                              "icon": "fa-compass",
+                              "title": "Je ne sais pas quel outil choisir selon le cas d'usage",
+                              "sub": "ChatGPT, Claude, Gemini... trop de nouveautés à assimiler simultanément."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 2 von 4 • Einstiegs-Sicherheit",
+                  "title": "Was ist Ihre größte Sorge oder Frage bei der Nutzung von KI?",
+                  "desc": "Wir passen Ihren 100-Prompts-Leitfaden gezielt an Ihre Ausgangslage an:",
+                  "options": [
+                        {
+                              "id": "complex_prompts",
+                              "icon": "fa-comments",
+                              "title": "Ich weiß nicht, wie ich präzise Prompts formulieren soll",
+                              "sub": "Die Antworten wirken oft hölzern, oberflächlich oder unbrauchbar."
+                        },
+                        {
+                              "id": "privacy",
+                              "icon": "fa-lock",
+                              "title": "Angst vor Fehlern oder dem Gefühl, den Anschluss zu verlieren",
+                              "sub": "Bedenken bezüglich Datensicherheit und faktischer Richtigkeit der Ausgaben."
+                        },
+                        {
+                              "id": "many_tools",
+                              "icon": "fa-compass",
+                              "title": "Orientierungslosigkeit bei der Wahl des passenden Tools",
+                              "sub": "ChatGPT, Claude, Gemini... zu viele Neuerscheinungen auf einmal."
+                        }
+                  ]
+            }
       },
       {
-        id: 'lead_q3',
-        pt: {
-          eyebrow: 'Etapa 3 de 4 • Experiência Anterior',
-          title: 'Você já tentou fazer outros cursos ou tutoriais na internet antes?',
-          desc: 'Entender seu histórico nos ajuda a entregar a experiência certa:',
-          options: [
-            { id: 'gave_up', icon: 'fa-times-circle', title: 'Sim, mas desisti por serem muito longos e teóricos', sub: 'Aulas cansativas de 40 minutos em vídeo que não ensinam o que fazer na prática.' },
-            { id: 'youtube', icon: 'fa-play', title: 'Só vi vídeos soltos no YouTube ou TikTok', sub: 'Conteúdos fragmentados que não formam uma base estruturada de aprendizado.' },
-            { id: 'never', icon: 'fa-sparkles', title: 'Nunca fiz nenhum curso. O Educly será o meu primeiro', sub: 'Quero um método confiável e direto ao ponto para começar do jeito certo.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 3 of 4 • Past Experience',
-          title: 'Have you attempted other courses or internet tutorials before?',
-          desc: 'Understanding your background ensures we deliver the exact right experience:',
-          options: [
-            { id: 'gave_up', icon: 'fa-times-circle', title: 'Yes, but dropped out because they were too long and theoretical', sub: 'Tedious 40-minute lectures that never showed real everyday workflows.' },
-            { id: 'youtube', icon: 'fa-play', title: 'Only watched scattered YouTube or social media clips', sub: 'Fragmented tips that failed to provide a cohesive learning path.' },
-            { id: 'never', icon: 'fa-sparkles', title: 'Never taken any course. Educly will be my first', sub: 'I want a trusted, structured, bite-sized foundation right from day one.' }
-          ]
-        }
+            "id": "lead_q3",
+            "pt": {
+                  "eyebrow": "Etapa 3 de 4 • Experiência Anterior",
+                  "title": "Você já tentou fazer outros cursos ou tutoriais na internet antes?",
+                  "desc": "Entender seu histórico nos ajuda a entregar a experiência certa:",
+                  "options": [
+                        {
+                              "id": "gave_up",
+                              "icon": "fa-times-circle",
+                              "title": "Sim, mas desisti por serem muito longos e teóricos",
+                              "sub": "Aulas cansativas de 40 minutos em vídeo que não ensinam o que fazer na prática."
+                        },
+                        {
+                              "id": "youtube",
+                              "icon": "fa-play",
+                              "title": "Só vi vídeos soltos no YouTube ou TikTok",
+                              "sub": "Conteúdos fragmentados que não formam uma base estruturada de aprendizado."
+                        },
+                        {
+                              "id": "never",
+                              "icon": "fa-sparkles",
+                              "title": "Nunca fiz nenhum curso. O Educly será o meu primeiro",
+                              "sub": "Quero um método confiável e direto ao ponto para começar do jeito certo."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 3 of 4 • Past Experience",
+                  "title": "Have you attempted other courses or internet tutorials before?",
+                  "desc": "Understanding your background ensures we deliver the exact right experience:",
+                  "options": [
+                        {
+                              "id": "gave_up",
+                              "icon": "fa-times-circle",
+                              "title": "Yes, but dropped out because they were too long and theoretical",
+                              "sub": "Tedious 40-minute lectures that never showed real everyday workflows."
+                        },
+                        {
+                              "id": "youtube",
+                              "icon": "fa-play",
+                              "title": "Only watched scattered YouTube or social media clips",
+                              "sub": "Fragmented tips that failed to provide a cohesive learning path."
+                        },
+                        {
+                              "id": "never",
+                              "icon": "fa-sparkles",
+                              "title": "Never taken any course. Educly will be my first",
+                              "sub": "I want a trusted, structured, bite-sized foundation right from day one."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 3 de 4 • Experiencia Previa",
+                  "title": "¿Has intentado hacer otros cursos o tutoriales de IA antes?",
+                  "desc": "Conocer tu recorrido nos permite ofrecerte la experiencia adecuada:",
+                  "options": [
+                        {
+                              "id": "gave_up",
+                              "icon": "fa-times-circle",
+                              "title": "Sí, pero los abandoné por ser largos y teóricos",
+                              "sub": "Vídeos de 40 minutos con exceso de teoría que no resuelven el día a día."
+                        },
+                        {
+                              "id": "youtube",
+                              "icon": "fa-play",
+                              "title": "Solo he visto vídeos sueltos en YouTube o redes",
+                              "sub": "Consejos dispersos que no crean una base sólida de aprendizaje."
+                        },
+                        {
+                              "id": "never",
+                              "icon": "fa-sparkles",
+                              "title": "Nunca he hecho un curso. Educly será el primero",
+                              "sub": "Busco un método estructurado y ágil para empezar con el pie derecho."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 3 sur 4 • Expérience Précédente",
+                  "title": "Avez-vous déjà suivi d'autres cours ou tutoriels en ligne ?",
+                  "desc": "Mieux cerner vos habitudes garantit un format parfaitement calibré :",
+                  "options": [
+                        {
+                              "id": "gave_up",
+                              "icon": "fa-times-circle",
+                              "title": "Oui, mais abandonné car trop longs et théoriques",
+                              "sub": "Vidéos de 40 minutes trop abstraites sans cas concrets du quotidien."
+                        },
+                        {
+                              "id": "youtube",
+                              "icon": "fa-play",
+                              "title": "Uniquement des extraits épars sur YouTube ou réseaux",
+                              "sub": "Astuces isolées qui ne forment pas un cursus cohérent."
+                        },
+                        {
+                              "id": "never",
+                              "icon": "fa-sparkles",
+                              "title": "Jamais suivi de formation. Educly sera la première",
+                              "sub": "Je recherche une méthode claire et progressive dès le premier jour."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 3 von 4 • Vorerfahrung",
+                  "title": "Haben Sie bereits andere KI-Kurse oder Online-Tutorials ausprobiert?",
+                  "desc": "Ihr Erfahrungshintergrund hilft uns, die richtige Lernform bereitzustellen:",
+                  "options": [
+                        {
+                              "id": "gave_up",
+                              "icon": "fa-times-circle",
+                              "title": "Ja, aber abgebrochen – zu langwierig und theoretisch",
+                              "sub": "Ermüdende 40-Minuten-Videos ohne konkrete Praxisanwendung im Alltag."
+                        },
+                        {
+                              "id": "youtube",
+                              "icon": "fa-play",
+                              "title": "Nur vereinzelte Videos auf YouTube oder Social Media",
+                              "sub": "Bruchstückhafte Tipps, die keinen zusammenhängenden Leitfaden bieten."
+                        },
+                        {
+                              "id": "never",
+                              "icon": "fa-sparkles",
+                              "title": "Noch nie einen Kurs belegt. Educly ist mein erster Schritt",
+                              "sub": "Ich wünsche mir ein praxistaugliches, modulares System von Grund auf."
+                        }
+                  ]
+            }
       },
       {
-        id: 'lead_q4',
-        pt: {
-          eyebrow: 'Etapa 4 de 4 • Primeiro Aprendizado Desejado',
-          title: 'O que você mais gostaria de conseguir fazer já nesta semana com IA?',
-          desc: 'Vamos destacar isso no seu resumo de diagnóstico gratuito:',
-          options: [
-            { id: 'instant_emails', icon: 'fa-envelope-open-text', title: 'Responder mensagens e escrever e-mails profissionais em segundos', sub: 'Acabar com a procrastinação na frente da tela em branco.' },
-            { id: 'summarize_docs', icon: 'fa-file-invoice', title: 'Resumir artigos, livros e documentos longos com precisão', sub: 'Extrair tópicos cruciais sem precisar ler centenas de páginas.' },
-            { id: 'organize_ideas', icon: 'fa-lightbulb', title: 'Organizar ideias, metas e planejar minha rotina com clareza', sub: 'Usar a IA como um mentor pessoal de produtividade e foco.' }
-          ]
-        },
-        en: {
-          eyebrow: 'Step 4 of 4 • Instant Milestone',
-          title: 'What would you like to achieve using AI this very week?',
-          desc: 'We will highlight this practical quick-win in your free diagnostic report:',
-          options: [
-            { id: 'instant_emails', icon: 'fa-envelope-open-text', title: 'Draft crisp emails and messages in seconds', sub: 'End blank-screen procrastination when typing to colleagues and clients.' },
-            { id: 'summarize_docs', icon: 'fa-file-invoice', title: 'Summarize articles and long documents accurately', sub: 'Distill critical takeaways without reading hundreds of dense pages.' },
-            { id: 'organize_ideas', icon: 'fa-lightbulb', title: 'Structure ideas and organize weekly goals with clarity', sub: 'Use AI as a personal productivity and brainstorming sparring partner.' }
-          ]
-        }
+            "id": "lead_q4",
+            "pt": {
+                  "eyebrow": "Etapa 4 de 4 • Primeiro Aprendizado Desejado",
+                  "title": "O que você mais gostaria de conseguir fazer já nesta semana com IA?",
+                  "desc": "Vamos destacar isso no seu resumo de diagnóstico gratuito:",
+                  "options": [
+                        {
+                              "id": "instant_emails",
+                              "icon": "fa-envelope-open-text",
+                              "title": "Responder mensagens e escrever e-mails profissionais em segundos",
+                              "sub": "Acabar com a procrastinação na frente da tela em branco."
+                        },
+                        {
+                              "id": "summarize_docs",
+                              "icon": "fa-file-invoice",
+                              "title": "Resumir artigos, livros e documentos longos com precisão",
+                              "sub": "Extrair tópicos cruciais sem precisar ler centenas de páginas."
+                        },
+                        {
+                              "id": "organize_ideas",
+                              "icon": "fa-lightbulb",
+                              "title": "Organizar ideias, metas e planejar minha rotina com clareza",
+                              "sub": "Usar a IA como um mentor pessoal de produtividade e foco."
+                        }
+                  ]
+            },
+            "en": {
+                  "eyebrow": "Step 4 of 4 • Instant Milestone",
+                  "title": "What would you like to achieve using AI this very week?",
+                  "desc": "We will highlight this practical quick-win in your free diagnostic report:",
+                  "options": [
+                        {
+                              "id": "instant_emails",
+                              "icon": "fa-envelope-open-text",
+                              "title": "Draft crisp emails and messages in seconds",
+                              "sub": "End blank-screen procrastination when typing to colleagues and clients."
+                        },
+                        {
+                              "id": "summarize_docs",
+                              "icon": "fa-file-invoice",
+                              "title": "Summarize articles and long documents accurately",
+                              "sub": "Distill critical takeaways without reading hundreds of dense pages."
+                        },
+                        {
+                              "id": "organize_ideas",
+                              "icon": "fa-lightbulb",
+                              "title": "Structure ideas and organize weekly goals with clarity",
+                              "sub": "Use AI as a personal productivity and brainstorming sparring partner."
+                        }
+                  ]
+            },
+            "es": {
+                  "eyebrow": "Paso 4 de 4 • Victoria Rápida Deseada",
+                  "title": "¿Qué logro te gustaría conseguir esta misma semana con IA?",
+                  "desc": "Destacaremos este primer paso en tu informe de diagnóstico gratuito:",
+                  "options": [
+                        {
+                              "id": "instant_emails",
+                              "icon": "fa-envelope-open-text",
+                              "title": "Redactar correos y mensajes profesionales en segundos",
+                              "sub": "Superar el bloqueo frente a la pantalla en blanco al escribir a clientes."
+                        },
+                        {
+                              "id": "summarize_docs",
+                              "icon": "fa-file-invoice",
+                              "title": "Sintetizar informes y documentos largos con precisión",
+                              "sub": "Extraer puntos clave al instante sin leer cientos de páginas."
+                        },
+                        {
+                              "id": "organize_ideas",
+                              "icon": "fa-lightbulb",
+                              "title": "Estructurar ideas y planificar objetivos con total claridad",
+                              "sub": "Utilizar la IA como asistente personal de productividad y enfoque."
+                        }
+                  ]
+            },
+            "fr": {
+                  "eyebrow": "Étape 4 sur 4 • Objectif Immédiat",
+                  "title": "Que souhaitez-vous accomplir avec l'IA dès cette première semaine ?",
+                  "desc": "Nous mettrons ce premier succès en avant dans votre diagnostic :",
+                  "options": [
+                        {
+                              "id": "instant_emails",
+                              "icon": "fa-envelope-open-text",
+                              "title": "Rédiger des e-mails professionnels impeccables en quelques secondes",
+                              "sub": "Éliminer l'hésitation devant la page blanche face aux collègues et clients."
+                        },
+                        {
+                              "id": "summarize_docs",
+                              "icon": "fa-file-invoice",
+                              "title": "Résumer des documents et articles denses avec exactitude",
+                              "sub": "Extraire les points clés sans devoir lire des dizaines de pages."
+                        },
+                        {
+                              "id": "organize_ideas",
+                              "icon": "fa-lightbulb",
+                              "title": "Structurer des projets et clarifier vos priorités hebdomadaires",
+                              "sub": "Faire de l'IA votre copilote de réflexion et d'efficacité."
+                        }
+                  ]
+            },
+            "de": {
+                  "eyebrow": "Schritt 4 von 4 • Sofortiges Etappenziel",
+                  "title": "Was möchten Sie bereits in dieser ersten Woche mit KI umsetzen?",
+                  "desc": "Diesen Meilenstein heben wir in Ihrem kostenlosen Diagnosebericht hervor:",
+                  "options": [
+                        {
+                              "id": "instant_emails",
+                              "icon": "fa-envelope-open-text",
+                              "title": "Geschäftliche E-Mails und Texte in Sekundenschnelle formulieren",
+                              "sub": "Keine Schreibblockaden mehr vor dem leeren Dokument."
+                        },
+                        {
+                              "id": "summarize_docs",
+                              "icon": "fa-file-invoice",
+                              "title": "Lange Dokumente und Berichte präzise auf den Punkt zusammenfassen",
+                              "sub": "Wesentliche Kernpunkte erfassen, ohne hunderte Seiten durchzugehen."
+                        },
+                        {
+                              "id": "organize_ideas",
+                              "icon": "fa-lightbulb",
+                              "title": "Ideen strukturieren und Wochenziele mit System planen",
+                              "sub": "KI als persönlichen Sparringspartner für Fokus und Organisation nutzen."
+                        }
+                  ]
+            }
       }
-    ]
+]
   };
 
   // -------------------------------------------------------------------------
@@ -748,16 +1749,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Simulador de Vertentes (Pills na barra do Header)
+  // Simulador de Vertentes & Switcher de Temas (Barra Superior)
   document.querySelectorAll('.sim-opt-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.sim-opt-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       forcedMode = btn.dataset.mode;
-      
-      if (forcedMode !== 'auto') {
-        branchProfile = forcedMode === 'checkout' ? 'b2c' : forcedMode === 'whatsapp' ? 'b2b' : 'lead';
-        sessionData.profile = branchProfile;
+
+      // Limpa classes de tema anteriores
+      document.body.classList.remove('theme-educly-1', 'theme-swiss-2', 'theme-dark-3', 'theme-aurora-4');
+
+      if (forcedMode === 'auto') {
+        // TEMA 1: Educly Autoral Oficial + Ramificação Dinâmica iniciada na Pergunta 1
+        document.body.classList.add('theme-educly-1');
+        branchProfile = null;
+        sessionData.profile = null;
+        sessionData.answers = {};
+        currentStep = 1;
+        if (screenIntro) screenIntro.classList.remove('active');
+        if (progressModule) progressModule.style.display = 'block';
+        renderCurrentQuestion();
+      } else if (forcedMode === 'checkout') {
+        // TEMA 2: Swiss Minimalist & Bento + Direto nas perguntas da Trilha B2C
+        document.body.classList.add('theme-swiss-2');
+        branchProfile = 'b2c';
+        sessionData.profile = 'b2c';
+        currentStep = 2;
+        if (screenIntro) screenIntro.classList.remove('active');
+        if (progressModule) progressModule.style.display = 'block';
+        renderCurrentQuestion();
+      } else if (forcedMode === 'whatsapp') {
+        // TEMA 3: Dark OLED Kinetic Learning + Direto nas perguntas da Trilha B2B
+        document.body.classList.add('theme-dark-3');
+        branchProfile = 'b2b';
+        sessionData.profile = 'b2b';
+        currentStep = 2;
+        if (screenIntro) screenIntro.classList.remove('active');
+        if (progressModule) progressModule.style.display = 'block';
+        renderCurrentQuestion();
+      } else if (forcedMode === 'lead') {
+        // TEMA 4: Aurora Tech Glass + Direto nas perguntas da Trilha Lead
+        document.body.classList.add('theme-aurora-4');
+        branchProfile = 'lead';
+        sessionData.profile = 'lead';
+        currentStep = 2;
+        if (screenIntro) screenIntro.classList.remove('active');
+        if (progressModule) progressModule.style.display = 'block';
+        renderCurrentQuestion();
       }
       
       // Se já estiver na tela de resultado, atualiza imediatamente
