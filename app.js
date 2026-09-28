@@ -2179,18 +2179,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (b2bPain) b2bPain.textContent = ans3;
         if (b2bFormat) b2bFormat.textContent = ans4;
 
-        // Configura link do WhatsApp com mensagem pré-formatada
+        // Configura link do WhatsApp com mensagem pré-formatada de alta autoridade
         const btnGoToWhatsApp = document.getElementById('btnGoToWhatsApp');
         if (btnGoToWhatsApp) {
           const textWpp = encodeURIComponent(
-            `*Olá Equipe Educly! Concluí o diagnóstico corporativo no Quiz:*\n\n` +
-            `• *Perfil:* Capacitação de Equipe (B2B)\n` +
-            `• *Porte:* ${ans2}\n` +
-            `• *Gargalo:* ${ans3}\n` +
+            `*Olá, Thiago! Concluí o Diagnóstico de Inteligência Artificial no Educly:*\n\n` +
+            `📊 *Resumo da Avaliação Corporativa:*\n` +
+            `• *Perfil:* Capacitação de Equipes & Gestão (B2B)\n` +
+            `• *Tamanho do Time:* ${ans2}\n` +
+            `• *Principal Desafio:* ${ans3}\n` +
             `• *Formato Desejado:* ${ans4}\n\n` +
-            `Gostaria de agendar uma demonstração do Painel Educly Enterprise.`
+            `Gostaria de agendar a demonstração executiva e conhecer a proposta corporativa personalizada para a nossa empresa.`
           );
-          btnGoToWhatsApp.href = `https://wa.me/5511999999999?text=${textWpp}`;
+          btnGoToWhatsApp.href = `https://wa.me/5562996046458?text=${textWpp}`;
         }
       }
 
