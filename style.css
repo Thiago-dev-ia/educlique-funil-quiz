@@ -362,7 +362,29 @@ body.educly-light-body {
   transform: translateY(0);
 }
 
-/* Intro Screen */
+/* Intro Screen Eyebrow Autoral Original */
+.educly-autoral-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.circle-icon-svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.educly-eyebrow-text {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #546078;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .challenge-pill {
   display: inline-flex;
   align-items: center;
@@ -559,7 +581,7 @@ body.educly-light-body {
 .choices-stack {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .choice-card {
@@ -567,26 +589,28 @@ body.educly-light-body {
   align-items: center;
   gap: 14px;
   background: #FFFFFF;
-  border: 1px solid var(--border-divider);
-  border-radius: var(--radius-opt);
-  padding: 14px 18px;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 16px 18px;
   text-align: left;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   width: 100%;
   color: inherit;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .choice-card:hover {
-  background: var(--educly-blue-light);
-  border-color: var(--border-blue);
-  transform: translateX(3px);
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .choice-card.selected {
-  background: rgba(249, 115, 22, 0.08);
-  border-color: var(--educly-orange);
-  box-shadow: 0 0 0 1px var(--educly-orange);
+  background: rgba(249, 115, 22, 0.05);
+  border-color: #F97316;
+  box-shadow: 0 0 0 1.5px #F97316, 0 4px 12px rgba(249, 115, 22, 0.1);
 }
 
 .choice-icon {
