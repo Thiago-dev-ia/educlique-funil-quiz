@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Comparativo: 3 Estilos de Design Únicos — Educly.app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #06090F;
+      color: #F8FAFC;
+      padding: 40px 20px 80px 20px;
+      min-height: 100vh;
+    }
+
+    .wireframe-header {
+      max-width: 1320px;
+      margin: 0 auto 36px auto;
+      text-align: center;
+    }
+
+    .wf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      color: #F97316;
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .wf-h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+      letter-spacing: -0.5px;
+    }
+
+    .wf-lead {
+      color: #94A3B8;
+      font-size: 1rem;
+      max-width: 820px;
+      margin: 0 auto 24px auto;
+      line-height: 1.6;
+    }
+
+    /* Grid das 3 Colunas de Comparação */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 28px;
+      max-width: 1360px;
+      margin: 0 auto;
+      align-items: stretch;
+    }
+
+    .column-box {
+      background: #0E1420;
+      border: 1px solid #1E293B;
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .column-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-1 { background: rgba(249, 115, 22, 0.15); color: #F97316; border: 1px solid rgba(249, 115, 22, 0.3); }
+    .tag-2 { background: rgba(244, 244, 245, 0.12); color: #F4F4F5; border: 1px solid rgba(244, 244, 245, 0.3); }
+    .tag-3 { background: rgba(6, 182, 212, 0.15); color: #22D3EE; border: 1px solid rgba(6, 182, 212, 0.3); }
+
+    .column-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .column-desc {
+      font-size: 0.84rem;
+      color: #94A3B8;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      min-height: 48px;
+    }
+
+    /* Container de Simulação do Card do Quiz */
+    .mock-canvas {
+      border-radius: 18px;
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* =====================================================
+       MODELO 1: EDUCLY AUTORAL PURO (Original do App)
+       ===================================================== */
+    .mock-1 {
+      background: #FFFFFF;
+      color: #1E293B;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Eyebrow Autoral Original do Educly (Com o SVG Circle e Geist Mono) */
+    .educly-autoral-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .circle-icon-svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    .educly-eyebrow-text {
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #546078;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .mock-1 .m-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #1E293B;
+      margin-bottom: 8px;
+    }
+
+    .mock-1 .m-title span { color: #F97316; }
+
+    .mock-1 .m-lead {
+      font-size: 0.85rem;
+      color: #475467;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Barra clássica Educly */
+    .mock-1 .progress-wrap {
+      margin-bottom: 16px;
+    }
+    .mock-1 .p-bar-bg {
+      height: 6px;
+      background: #E2E8F0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .mock-1 .p-bar-fill {
+      height: 100%;
+      width: 35%;
+      background: #F97316;
+      border-radius: 999px;
+    }
+
+    .mock-1 .card-option {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #FFFFFF;
+      border: 1px solid #D8DCE6;
+      border-radius: 14px;
+      padding: 13px 16px;
+      margin-bottom: 10px;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .mock-1 .card-option:hover {
+      border-color: #8BBDE8;
+      background: #EAF3FD;
+    }
+
+    .mock-1 .card-option.selected {
+      border-color: #F97316;
+      background: rgba(249, 115, 22, 0.08);
+      box-shadow: 0 0 0 1px #F97316;
+    }
+
+    .mock-1 .c-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #F1F5F9;
+      color: #F97316;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .mock-1 .c-text strong { display: block; font-size: 0.88rem; color: #1E293B; margin-bottom: 2px; }
+    .mock-1 .c-text small { display: block; font-size: 0.74rem; color: #64748B; }
+
+    /* =====================================================
+       MODELO 2: SWISS MINIMALIST & BENTO EDITORIAL
+       (Alta clareza, linhas cirúrgicas 1px, numerais mono)
+       ===================================================== */
+    .mock-2 {
+      background: #FAFAFA;
+      color: #09090B;
+      border: 1px solid #18181B;
+      box-shadow: 0 8px 0 #18181B;
+      border-radius: 8px;
+    }
+
+    .swiss-meta-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #E4E4E7;
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+    }
+
+    .swiss-kicker {
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #09090B;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .swiss-stage-count {
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #71717A;
+    }
+
+    /* Barra Segmentada em Blocos (Bento Style) */
+    .swiss-bento-progress {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+
+    .bento-segment {
+      height: 4px;
+      background: #E4E4E7;
+      border-radius: 1px;
+    }
+
+    .bento-segment.active {
+      background: #09090B;
+    }
+
+    .mock-2 .m-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #09090B;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .mock-2 .m-title mark {
+      background: transparent;
+      color: #D97706;
+      border-bottom: 2px solid #D97706;
+      padding-bottom: 1px;
+    }
+
+    .mock-2 .m-lead {
+      font-size: 0.85rem;
+      color: #52525B;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .mock-2 .card-option {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #FFFFFF;
+      border: 1px solid #D4D4D8;
+      border-radius: 4px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .mock-2 .card-option:hover {
+      border-color: #09090B;
+      transform: translateX(4px);
+      box-shadow: 2px 2px 0 #09090B;
+    }
+
+    .mock-2 .card-option.selected {
+      border: 1.5px solid #09090B;
+      background: #F4F4F5;
+      box-shadow: 3px 3px 0 #09090B;
+    }
+
+    .mock-2 .c-index {
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #71717A;
+      background: #F4F4F5;
+      padding: 6px 8px;
+      border-radius: 2px;
+      border: 1px solid #E4E4E7;
+      letter-spacing: -0.5px;
+    }
+
+    .mock-2 .card-option.selected .c-index {
+      background: #09090B;
+      color: #FFFFFF;
+      border-color: #09090B;
+    }
+
+    .mock-2 .c-text strong { 
+      display: block; 
+      font-size: 0.88rem; 
+      color: #09090B; 
+      font-weight: 700;
+      margin-bottom: 2px; 
+    }
+    
+    .mock-2 .c-text small { 
+      display: block; 
+      font-size: 0.75rem; 
+      color: #71717A; 
+      line-height: 1.4;
+    }
+
+    /* =====================================================
+       MODELO 3: DARK OLED KINETIC LEARNING
+       (Texto Shimmer Light Beam + Barra Neon com Pulso)
+       ===================================================== */
+    .mock-3 {
+      background: #030712;
+      color: #F8FAFC;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    /* Aura luminosa de fundo */
+    .mock-3::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(139, 92, 246, 0.15) 50%, transparent 70%);
+      pointer-events: none;
+      filter: blur(40px);
+    }
+
+    /* Barra Progressiva Neon Viva com Pulso */
+    .kinetic-progress-wrap {
+      margin-bottom: 18px;
+    }
+
+    .kinetic-progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.72rem;
+      margin-bottom: 6px;
+      color: #94A3B8;
+    }
+
+    .kinetic-progress-meta span:last-child {
+      color: #22D3EE;
+      font-weight: 700;
+    }
+
+    .kinetic-track {
+      position: relative;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      overflow: visible;
+    }
+
+    .kinetic-fill {
+      position: relative;
+      height: 100%;
+      width: 45%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #06B6D4, #8B5CF6, #EC4899);
+      background-size: 200% 100%;
+      animation: pulseGradient 3s linear infinite;
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.6);
+    }
+
+    /* Partícula de luz brilhante na ponta da barra */
+    .kinetic-fill::after {
+      content: '';
+      position: absolute;
+      right: -2px;
+      top: -3px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0 0 10px #22D3EE, 0 0 16px #A855F7;
+      animation: beamDotPulse 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes beamDotPulse {
+      0% { transform: scale(0.8); opacity: 0.8; }
+      100% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 8px #FFFFFF); }
+    }
+
+    /* EFEITO SHIMMER BEAM (FEIXE DE LUZ QUE PERCORRE AS LETRAS) */
+    .shimmer-text {
+      background: linear-gradient(
+        110deg,
+        #94A3B8 20%,
+        #FFFFFF 40%,
+        #22D3EE 50%,
+        #A855F7 60%,
+        #94A3B8 80%
+      );
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: textShimmerBeam 3.5s linear infinite;
+    }
+
+    @keyframes textShimmerBeam {
+      0% { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+
+    .mock-3 .m-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .mock-3 .m-lead {
+      font-size: 0.85rem;
+      color: #94A3B8;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .mock-3 .card-option {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      overflow: hidden;
+    }
+
+    .mock-3 .card-option:hover {
+      border-color: rgba(34, 211, 238, 0.5);
+      background: rgba(15, 23, 42, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.15);
+    }
+
+    .mock-3 .card-option.selected {
+      border-color: #22D3EE;
+      background: rgba(6, 182, 212, 0.1);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.25), inset 0 0 12px rgba(6, 182, 212, 0.1);
+    }
+
+    .mock-3 .c-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(34, 211, 238, 0.1);
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      color: #22D3EE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .mock-3 .card-option.selected .c-icon {
+      background: #22D3EE;
+      color: #030712;
+      box-shadow: 0 0 14px #22D3EE;
+    }
+
+    .mock-3 .c-text strong { 
+      display: block; 
+      font-size: 0.88rem; 
+      color: #FFFFFF; 
+      margin-bottom: 2px; 
+    }
+    
+    .mock-3 .c-text small { 
+      display: block; 
+      font-size: 0.74rem; 
+      color: #94A3B8; 
+    }
+
+    /* Botões de Ação Final (CTA) */
+    .mock-btn-cta {
+      margin-top: auto;
+      padding: 13px;
+      border: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      transition: all 0.2s;
+    }
+
+    .btn-1 { 
+      background: #F97316; 
+      color: #FFFFFF; 
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(249, 115, 22, 0.35); 
+    }
+    .btn-1:hover { background: #EA580C; }
+
+    .btn-2 { 
+      background: #09090B; 
+      color: #FFFFFF; 
+      border-radius: 4px;
+      font-family: 'Geist Mono', monospace;
+      letter-spacing: 0.5px;
+      border: 1px solid #18181B;
+    }
+    .btn-2:hover { 
+      background: #18181B; 
+      box-shadow: 2px 2px 0 #71717A;
+    }
+
+    .btn-3 { 
+      background: linear-gradient(90deg, #06B6D4, #8B5CF6);
+      color: #FFFFFF; 
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(6, 182, 212, 0.35); 
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-3:hover { 
+      box-shadow: 0 6px 24px rgba(139, 92, 246, 0.5); 
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="wireframe-header">
+    <span class="wf-badge"><i class="fas fa-layer-group"></i> WIREFRAME COMPARATIVO DE ALINHAMENTO</span>
+    <h1 class="wf-h1">3 Identidades Visuais Únicas para o Quiz Educly</h1>
+    <p class="wf-lead">
+      O <strong>Modelo 1</strong> mantém o estilo 100% autoral original da Educly. Os <strong>Modelos 2 e 3</strong> trazem estéticas radicalmente distintas e contrastantes para aprovação do cliente.
+    </p>
+  </header>
+
+  <main class="comparison-grid">
+
+    <!-- COLUNA 1: EDUCLY AUTORAL ORIGINAL -->
+    <div class="column-box">
+      <span class="column-tag tag-1"><i class="fas fa-check-circle"></i> MODELO 1 (AUTORAL PURO)</span>
+      <h2 class="column-title">Educly Autoral Puro</h2>
+      <p class="column-desc">
+        Identidade canônica original do app: Fundo branco, tipografia Geist Mono com o ícone concêntrico autoral (`circle-Bg5J5ibd.svg`), detalhes em slate e acentos em laranja.
+      </p>
+
+      <div class="mock-canvas mock-1">
+        <!-- Barra clássica Educly -->
+        <div class="progress-wrap">
+          <div class="p-bar-bg">
+            <div class="p-bar-fill"></div>
+          </div>
+        </div>
+
+        <!-- EYEBROW AUTORAL ORIGINAL EDUCLY -->
+        <div class="educly-autoral-eyebrow">
+          <svg class="circle-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#2B7FD4" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#F97316"/>
+          </svg>
+          <span class="educly-eyebrow-text">DESAFIO DE 28 DIAS DE IA</span>
+        </div>
+
+        <h3 class="m-title">Descubra qual é o seu <span>nível real de IA</span> e quanto tempo economizar.</h3>
+        <p class="m-lead">Faça o teste prático de 2 minutos para receber seu plano guiado de micro-lições diárias de 15 minutos.</p>
+
+        <!-- Cards de Opção Interativos -->
+        <div class="card-option selected" onclick="toggleSelect(this)">
+          <div class="c-icon"><i class="fas fa-user-astronaut"></i></div>
+          <div class="c-text">
+            <strong>Acelerar Minha Rotina & Carreira</strong>
+            <small>Economizar até 20 horas por semana com ChatGPT e Claude.</small>
+          </div>
+        </div>
+
+        <div class="card-option" onclick="toggleSelect(this)">
+          <div class="c-icon"><i class="fas fa-building"></i></div>
+          <div class="c-text">
+            <strong>Capacitar Minha Equipe (B2B)</strong>
+            <small>Multiplicar a produtividade do negócio com IA.</small>
+          </div>
+        </div>
+
+        <button class="mock-btn-cta btn-1">COMEÇAR TESTE DE NÍVEL <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- COLUNA 2: SWISS MINIMALIST & BENTO EDITORIAL -->
+    <div class="column-box">
+      <span class="column-tag tag-2"><i class="fas fa-square"></i> MODELO 2 (SWISS BENTO)</span>
+      <h2 class="column-title">Swiss Minimalist & Bento</h2>
+      <p class="column-desc">
+        Baseado no design suíço e produtos como Notion e Linear: Linhas pretas de 1px, sem poluição visual, barra segmentada bento e índices numéricos mono (`[01]`, `[02]`).
+      </p>
+
+      <div class="mock-canvas mock-2">
+        <!-- Barra Bento Segmentada -->
+        <div class="swiss-bento-progress">
+          <div class="bento-segment active"></div>
+          <div class="bento-segment active"></div>
+          <div class="bento-segment"></div>
+          <div class="bento-segment"></div>
+        </div>
+
+        <div class="swiss-meta-strip">
+          <span class="swiss-kicker">EDUCLY PROTOCOL // IA.28</span>
+          <span class="swiss-stage-count">PASSO 01 / 04</span>
+        </div>
+
+        <h3 class="m-title">Mapeie seu índice de <mark>automação e produtividade</mark> pessoal</h3>
+        <p class="m-lead">Auditoria técnica de 120 segundos. Estrutura voltada para tomada de decisão objetiva e sem ruídos.</p>
+
+        <div class="card-option selected" onclick="toggleSelect(this)">
+          <span class="c-index">[01]</span>
+          <div class="c-text">
+            <strong>Otimização de Fluxo Individual</strong>
+            <small>Eliminação de gargalos repetitivos e automação de planilhas e textos.</small>
+          </div>
+        </div>
+
+        <div class="card-option" onclick="toggleSelect(this)">
+          <span class="c-index">[02]</span>
+          <div class="c-text">
+            <strong>Padronização de Operação Corporativa</strong>
+            <small>Governança de IA aplicada para empresas e equipes multidisciplinares.</small>
+          </div>
+        </div>
+
+        <button class="mock-btn-cta btn-2">AVANÇAR DIAGNÓSTICO →</button>
+      </div>
+    </div>
+
+    <!-- COLUNA 3: DARK OLED KINETIC LEARNING (SHIMMER BEAM) -->
+    <div class="column-box">
+      <span class="column-tag tag-3"><i class="fas fa-sparkles"></i> MODELO 3 (DARK KINETIC)</span>
+      <h2 class="column-title">Dark OLED Kinetic Learning</h2>
+      <p class="column-desc">
+        Interface futurista imersiva: Fundo Black OLED, <strong>barra progressiva viva com pulso</strong> e <strong>letras com iluminação animada (Shimmer Beam)</strong>.
+      </p>
+
+      <div class="mock-canvas mock-3">
+        <!-- Barra Neon Viva com Partícula de Luz -->
+        <div class="kinetic-progress-wrap">
+          <div class="kinetic-progress-meta">
+            <span>CALIBRAGEM NEURAL</span>
+            <span>45% CONCLUÍDO</span>
+          </div>
+          <div class="kinetic-track">
+            <div class="kinetic-fill"></div>
+          </div>
+        </div>
+
+        <!-- TÍTULO COM O EFEITO DE FEIXE DE LUZ QUE PERCORRE AS LETRAS -->
+        <h3 class="m-title">
+          Ative seu plano de <span class="shimmer-text">Microlearning Inteligente</span> em 28 dias
+        </h3>
+        <p class="m-lead">15 minutos por dia na palma da mão para dominar os modelos de linguagem generativos mais avançados do mundo.</p>
+
+        <!-- Cards Escuros com Efeito Glow -->
+        <div class="card-option selected" onclick="toggleSelect(this)">
+          <div class="c-icon"><i class="fas fa-bolt"></i></div>
+          <div class="c-text">
+            <strong>Elevação de Habilidade Profissional</strong>
+            <small>Domínio prático de engenharia de prompts e fluxos com IA.</small>
+          </div>
+        </div>
+
+        <div class="card-option" onclick="toggleSelect(this)">
+          <div class="c-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="c-text">
+            <strong>Implementação em Equipes & Startups</strong>
+            <small>Esteiras automáticas de conteúdo, suporte e análise preditiva.</small>
+          </div>
+        </div>
+
+        <button class="mock-btn-cta btn-3">
+          <span>INICIAR EXPERIÊNCIA VIVA</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleSelect(el) {
+      const parent = el.parentElement;
+      const options = parent.querySelectorAll('.card-option');
+      options.forEach(opt => opt.classList.remove('selected'));
+      el.classList.add('selected');
+    }
+  </script>
+
+</body>
+</html>

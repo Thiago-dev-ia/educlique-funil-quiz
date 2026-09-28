@@ -1,4 +1,4 @@
-# Educly — Funil de Quiz Interativo com Ramificação Dinâmica & Painel de Leads
+# Educly — Funil de Quiz Interativo com Ramificação Dinâmica & Wireframe Comparativo
 
 [![Status: Concluído](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success.svg)](#)
 [![Stack: Vanilla JS](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-orange.svg)](#)
@@ -13,14 +13,18 @@
 
 O projeto foi construído do zero com foco em **máxima taxa de conversão para tráfego pago**, **zero fricção móvel** e **fidelidade estética rigorosa** ao app oficial Educly:
 
-1. **Performance Extrema (Vanilla JS Puro)**: Carregamento em `< 250ms`, eliminando frameworks pesados na entrega inicial para garantir nota máxima no Google Lighthouse em 4G.
-2. **Design System Oficial (Modo Light)**: Tokens visuais extraídos do código fonte do app Educly, incluindo tipografia (`Inter`, `Outfit`, `Geist Mono`), paleta clara (`#FFFFFF`, `#F8FAFC`, `#F97316`) e animação *orange-sheen* no botão principal.
-3. **Ramificação Condicional Real (Árvore de Decisão)**: A partir da escolha do perfil na Q1, as perguntas 2, 3 e 4 se transformam dinamicamente para segmentar:
+1. **Performance Extrema (Vanilla JS Puro)**: Carregamento em `< 250ms`, eliminando frameworks pesados na entrega inicial para garantir nota máxima no Google Lighthouse em redes 4G/móveis.
+2. **Design System Oficial (Modo Light)**: Tokens visuais extraídos do app Educly, incluindo tipografia (`Inter`, `Outfit`, `Geist Mono`), paleta clara (`#FFFFFF`, `#F8FAFC`, `#F97316`) e animação *orange-sheen* no botão principal.
+3. **Wireframe Comparativo Multi-Estilo (`wireframe-comparativo.html`)**:
+   - **Modelo 1 (Educly Autoral)**: 100% fiel à linguagem visual do app oficial com o ícone concêntrico SVG e tipografia `Geist Mono`.
+   - **Modelo 2 (Swiss Minimalist Bento)**: Design austero suíço, sem distrações, linhas cirúrgicas de 1px e índices numéricos mono (`[01]`, `[02]`).
+   - **Modelo 3 (Dark OLED Kinetic Learning)**: Interface futurista com **feixe de luz animado (*Shimmer Light Beam*)** percorrendo o texto e **barra progressiva viva** com pulso neon.
+4. **Ramificação Condicional Real (Árvore de Decisão)**: A partir da escolha do perfil na Q1, as perguntas 2, 3 e 4 se transformam dinamicamente para segmentar:
    - **Trilha B2C (Individual)** $\rightarrow$ Gargalos de produtividade $\rightarrow$ Checkout com desconto e cronômetro.
    - **Trilha B2B (Empresas)** $\rightarrow$ Tamanho do time e dores corporativas $\rightarrow$ WhatsApp Executivo com mensagem pronta.
    - **Trilha Lead (Iniciantes)** $\rightarrow$ Inseguranças e objetivos da semana $\rightarrow$ Captura para envio do Guia de 100 Prompts.
-4. **Central de Administração de Dados (Painel Embutido)**: Botão flutuante na interface que abre um dashboard em tempo real com contadores, tabela de respostas gravadas no `localStorage` e gerador de payload JSON para Webhooks/CRMs.
-5. **Internacionalização Dinâmica (i18n)**: Suporte a 5 idiomas (`PT`, `EN`, `ES`, `FR`, `DE`) com alternância instantânea sem recarregar a página.
+5. **Central de Administração de Dados (Painel Embutido)**: Botão flutuante na interface que abre um dashboard em tempo real com contadores, tabela de respostas gravadas no `localStorage` e gerador de payload JSON para Webhooks/CRMs (compatível com Supabase, HubSpot, etc).
+6. **Internacionalização Dinâmica (i18n)**: Suporte a 5 idiomas (`PT`, `EN`, `ES`, `FR`, `DE`) com alternância instantânea sem recarregar a página.
 
 ---
 
@@ -32,7 +36,8 @@ educlique-funil-quiz/
 │   ├── logoLanding-ginAp5wP.png            # Logotipo principal Educly
 │   └── ...                                 # Assets complementares de UI
 ├── app.js                                  # Motor do quiz: ramificação, i18n, timer e painel admin
-├── index.html                              # Marcação semântica, viewport mobile-first e modais
+├── index.html                              # Quiz interativo de produção completo
+├── wireframe-comparativo.html              # Wireframe comparativo com os 3 estilos de design
 ├── style.css                               # Tokens de design system, classes light e animações
 ├── DETALHAMENTO-TECNICO-QUIZ-EDUCLY.txt    # Memorial descritivo em texto simples
 ├── Dossie-Tecnico-Educly-Thiago.pdf        # Apresentação executiva diagramada em PDF (A4)
@@ -44,7 +49,7 @@ educlique-funil-quiz/
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagens**: HTML5 Semântico, CSS3 Moderno (Custom Properties, Flexbox, Grid), JavaScript Vanilla (ES6+).
+- **Linguagens**: HTML5 Semântico, CSS3 Moderno (Custom Properties, Flexbox, Grid, Animações Shimmer Beam), JavaScript Vanilla (ES6+).
 - **Tipografia**: Google Fonts (`Inter`, `Outfit`, `Geist Mono`, `Plus Jakarta Sans`).
 - **Ícones**: Font Awesome 6.5.1 CDN.
 - **Persistência Local**: Web Storage API (`localStorage`).
@@ -55,14 +60,15 @@ educlique-funil-quiz/
 ## 💻 Como Executar Localmente
 
 ### Opção 1: Abrir diretamente no navegador
-Basta dar dois cliques no arquivo `index.html` em qualquer navegador moderno.
+Basta abrir o arquivo `index.html` (para o quiz completo) ou `wireframe-comparativo.html` (para o comparativo de design).
 
 ### Opção 2: Servidor local rápido (Node.js)
 ```bash
 # Via npx serve na porta 3005
 npx serve -l 3005 .
 ```
-Acesse: `http://localhost:3005`
+- **Quiz de Produção:** `http://localhost:3005/index.html`
+- **Wireframe Comparativo:** `http://localhost:3005/wireframe-comparativo.html`
 
 ---
 
@@ -71,7 +77,7 @@ Acesse: `http://localhost:3005`
 Para testar o fluxo de captura e o painel:
 1. Complete o teste respondendo às 4 perguntas ou utilize os atalhos de simulação na barra superior.
 2. Na tela final, clique no botão flutuante **`Painel de Leads (Demo)`** no canto inferior direito.
-3. Visualize os contadores em tempo real, a tabela com as respostas salvas e o botão **`Copiar JSON`** pronto para integração com APIs (Supabase, HubSpot, ActiveCampaign ou Webhook Make/n8n).
+3. Visualize os contadores em tempo real, a tabela com as respostas salvas e o botão **`Copiar JSON`** pronto para integração com APIs (Supabase, HubSpot, ActiveCampaign ou Webhooks).
 
 ---
 
