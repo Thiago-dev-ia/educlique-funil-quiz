@@ -1,87 +1,96 @@
-# Educly — Funil de Quiz Interativo com Ramificação Dinâmica & Wireframe Comparativo
+# Educly — Funil de Quiz Interativo com Ramificação Dinâmica, 4 Temas Modulares & i18n Nativo
 
-[![Status: Concluído](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success.svg)](#)
-[![Stack: Vanilla JS](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-orange.svg)](#)
-[![Design: Light Mode Oficial](https://img.shields.io/badge/Design-Light%20Mode%20Oficial-blue.svg)](#)
-[![Lighthouse: 100/100](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen.svg)](#)
+[![Status: Produção Concluída](https://img.shields.io/badge/Status-Produ%C3%A7%C3%A3o%20Conclu%C3%ADda-success.svg)](#)
+[![Stack: Vanilla JS Puro](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS%20(Zero%20Deps)-orange.svg)](#)
+[![Design System: Multi--Tema](https://img.shields.io/badge/Design%20System-4%20Temas%20Modulares-blue.svg)](#)
+[![Internacionalização: 5 Idiomas](https://img.shields.io/badge/i18n-PT%20%7C%20EN%20%7C%20ES%20%7C%20FR%20%7C%20DE-blueviolet.svg)](#)
+[![Autor: Thiago Nascimento Barbosa](https://img.shields.io/badge/Desenvolvido%20por-Thiago%20Nascimento%20Barbosa-1E293B.svg)](#)
 
-> Esteira interativa de qualificação, diagnóstico de IA e conversão desenhada sob medida para o ecossistema **Educly.app** (plataforma de microlearning de Inteligência Artificial com desafio de 28 dias).
-
----
-
-## 🚀 Proposta de Valor & Arquitetura
-
-O projeto foi construído do zero com foco em **máxima taxa de conversão para tráfego pago**, **zero fricção móvel** e **fidelidade estética rigorosa** ao app oficial Educly:
-
-1. **Performance Extrema (Vanilla JS Puro)**: Carregamento em `< 250ms`, eliminando frameworks pesados na entrega inicial para garantir nota máxima no Google Lighthouse em redes 4G/móveis.
-2. **Design System Oficial (Modo Light)**: Tokens visuais extraídos do app Educly, incluindo tipografia (`Inter`, `Outfit`, `Geist Mono`), paleta clara (`#FFFFFF`, `#F8FAFC`, `#F97316`) e animação *orange-sheen* no botão principal.
-3. **Wireframe Comparativo Multi-Estilo (`wireframe-comparativo.html`)**:
-   - **Modelo 1 (Educly Autoral)**: 100% fiel à linguagem visual do app oficial com o ícone concêntrico SVG e tipografia `Geist Mono`.
-   - **Modelo 2 (Swiss Minimalist Bento)**: Design austero suíço, sem distrações, linhas cirúrgicas de 1px e índices numéricos mono (`[01]`, `[02]`).
-   - **Modelo 3 (Dark OLED Kinetic Learning)**: Interface futurista com **feixe de luz animado (*Shimmer Light Beam*)** percorrendo o texto e **barra progressiva viva** com pulso neon.
-4. **Ramificação Condicional Real (Árvore de Decisão)**: A partir da escolha do perfil na Q1, as perguntas 2, 3 e 4 se transformam dinamicamente para segmentar:
-   - **Trilha B2C (Individual)** $\rightarrow$ Gargalos de produtividade $\rightarrow$ Checkout com desconto e cronômetro.
-   - **Trilha B2B (Empresas)** $\rightarrow$ Tamanho do time e dores corporativas $\rightarrow$ WhatsApp Executivo com mensagem pronta.
-   - **Trilha Lead (Iniciantes)** $\rightarrow$ Inseguranças e objetivos da semana $\rightarrow$ Captura para envio do Guia de 100 Prompts.
-5. **Central de Administração de Dados (Painel Embutido)**: Botão flutuante na interface que abre um dashboard em tempo real com contadores, tabela de respostas gravadas no `localStorage` e gerador de payload JSON para Webhooks/CRMs (compatível com Supabase, HubSpot, etc).
-6. **Internacionalização Dinâmica (i18n)**: Suporte a 5 idiomas (`PT`, `EN`, `ES`, `FR`, `DE`) com alternância instantânea sem recarregar a página.
+> Plataforma interativa de qualificação, diagnóstico de IA e conversão desenhada para o ecossistema **Educly.app** (microlearning de Inteligência Artificial com desafio de 28 dias). Construída sob princípios de **engenharia de alta performance, zero dependências pesadas e modularidade de temas**.
 
 ---
 
-## 📂 Árvore de Diretórios
+## 🎨 Galeria dos 4 Temas Visuais & Ângulos de Copy
+
+O projeto implementa uma arquitetura modular em CSS orientada por classes de escopo global no `document.body`, permitindo alternar instantaneamente entre 4 direções visuais e 4 propostas de copy sem recarregar o navegador:
+
+| Tema / Modo | Arquitetura Visual | Proposta de Copy Inicial (Passo 0) | Screenshot |
+| :--- | :--- | :--- | :--- |
+| **0. Ramificação Dinâmica**<br>`theme-educly-1` | **Educly Autoral Oficial** (Laranja vibrante `#F97316`, card branco cirúrgico, sombras orgânicas e botão com animação *orange-sheen*). | *\"Descubra qual é o seu nível real de IA e quanto tempo você pode economizar.\"* | ![Tema 1](docs/screenshots/01-tema-educly-oficial.png) |
+| **1. Trilha B2C (Checkout)**<br>`theme-swiss-2` | **Swiss Minimalist & Bento Editorial** (Papel creme fosco `#F4F4F0`, linhas pretas de `2px`, sombras sólidas offset `6px 6px 0 #000` e alto contraste). | *\"Elimine tarefas repetitivas e trabalhe 10x mais rápido com IA.\"* | ![Tema 2](docs/screenshots/02-tema-swiss-bento.png) |
+| **2. Trilha B2B (WhatsApp)**<br>`theme-dark-3` | **Cyberpunk Neo-Terminal / Dark OLED** (Preto puro `#050811`, malha técnica, acentos ciano elétrico `#00F2FE` e feixe *Shimmer Beam*). | *\"Diagnóstico de IA para Empresas: Eleve a eficiência operacional do seu time.\"* | ![Tema 3](docs/screenshots/03-tema-dark-oled.png) |
+| **3. Trilha Lead (Guia)**<br>`theme-aurora-4` | **Aurora Tech Glass** (Azul meia-noite `#090D18`, acrílico translúcido com `backdrop-filter: blur(18px)` e gradiente índigo). | *\"Domine a Inteligência Artificial do zero absoluto, sem complicação.\"* | ![Tema 4](docs/screenshots/04-tema-aurora-glass.png) |
+
+---
+
+## 🚀 Proposta de Engenharia & Diferenciais de Arquitetura
+
+1. **Performance Zero-Dependency (Vanilla JS Puro)**:
+   - Carregamento inicial em menos de **200ms**.
+   - Sem React/Vue/Next no bundle do usuário para tráfego pago, maximizando o *First Contentful Paint (FCP)* em dispositivos móveis 4G.
+2. **Ramificação Condicional Real (Decision Tree Engine)**:
+   - A partir da escolha de perfil na Pergunta 1, a árvore de decisão ramifica perguntas e entregáveis:
+     - **B2C Individual** $\rightarrow$ Diagnóstico de tarefas $\rightarrow$ Oferta promocional com cronômetro de 15 minutos.
+     - **B2B Corporativo** $\rightarrow$ Tamanho do time e dores operacionais $\rightarrow$ Conexão WhatsApp Executiva com dados pré-formatados.
+     - **Lead Capture** $\rightarrow$ Nível de conforto e receios com IA $\rightarrow$ Formulário de cadastro para envio do Guia de 100 Prompts.
+3. **Internacionalização Dinâmica (i18n)**:
+   - 5 idiomas totalmente traduzidos (`PT`, `EN`, `ES`, `FR`, `DE`), abrangendo 100% das 12 perguntas, opções, botões, modais e telas de transição.
+   - Alternância em tempo real sem perder o progresso ou estado da resposta ativa.
+4. **Painel Embutido de Administração & Webhooks**:
+   - Acesso via botão flutuante inferior para monitorar leads gerados localmente.
+   - Inspector de payload JSON estruturado pronto para envio via Webhook (Supabase, Make, Zapier, HubSpot, CRM).
+
+---
+
+## 📂 Árvore Estruturada de Arquivos
 
 ```
 educlique-funil-quiz/
-├── assets/                                 # Logotipo oficial em alta definição e ícones
-│   ├── logoLanding-ginAp5wP.png            # Logotipo principal Educly
-│   └── ...                                 # Assets complementares de UI
-├── app.js                                  # Motor do quiz: ramificação, i18n, timer e painel admin
-├── index.html                              # Quiz interativo de produção completo
-├── wireframe-comparativo.html              # Wireframe comparativo com os 3 estilos de design
-├── style.css                               # Tokens de design system, classes light e animações
-├── DETALHAMENTO-TECNICO-QUIZ-EDUCLY.txt    # Memorial descritivo em texto simples
-├── Dossie-Tecnico-Educly-Thiago.pdf        # Apresentação executiva diagramada em PDF (A4)
-├── .gitignore                              # Exclusão de arquivos de cache e temporários
-└── README.md                               # Documentação técnica do projeto
+├── docs/
+│   └── screenshots/                        # Evidências e capturas reais dos 4 temas
+│       ├── 01-tema-educly-oficial.png      # Print do Tema 1 (Educly Autoral)
+│       ├── 02-tema-swiss-bento.png         # Print do Tema 2 (Swiss Minimalist)
+│       ├── 03-tema-dark-oled.png           # Print do Tema 3 (Dark OLED)
+│       └── 04-tema-aurora-glass.png        # Print do Tema 4 (Aurora Tech Glass)
+├── assets/                                 # Logotipos e elementos gráficos vetoriais
+│   └── logoLanding-ginAp5wP.png            # Logotipo oficial em alta definição
+├── app.js                                  # Motor de regras, árvore ramificada, temas e i18n
+├── index.html                              # Aplicação principal de produção
+├── style.css                               # Tokens, variáveis CSS e seletores modulares dos 4 temas
+├── wireframe-comparativo.html              # Wireframe comparativo independente
+├── .gitignore                              # Exclusão de arquivos de cache e ambiente
+└── README.md                               # Documentação técnica e guia de engenharia
 ```
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Padrões Aplicados
 
-- **Linguagens**: HTML5 Semântico, CSS3 Moderno (Custom Properties, Flexbox, Grid, Animações Shimmer Beam), JavaScript Vanilla (ES6+).
-- **Tipografia**: Google Fonts (`Inter`, `Outfit`, `Geist Mono`, `Plus Jakarta Sans`).
-- **Ícones**: Font Awesome 6.5.1 CDN.
-- **Persistência Local**: Web Storage API (`localStorage`).
-- **Compatibilidade de Deploy**: Pronto para Vercel, Netlify, Cloudflare Pages ou GitHub Pages.
+- **Core**: HTML5 Semântico, CSS3 Moderno (Custom Properties, Flexbox, Grid, Animações Shimmer Beam, Backdrop Filters), JavaScript ES6+ (Manipulação direta da DOM com event delegation).
+- **Tipografia**: `Plus Jakarta Sans`, `Inter`, `Outfit`, `Geist Mono` / `JetBrains Mono`.
+- **Ícones**: Font Awesome 6.5.1.
+- **Persistência**: Web Storage API (`localStorage`) com fallback resiliente.
+- **Governança de Código**: Branches temáticas, Pull Requests documentados com revisões técnicas e padrões semânticos de commit.
 
 ---
 
-## 💻 Como Executar Localmente
+## 💻 Como Rodar o Projeto Localmente
 
-### Opção 1: Abrir diretamente no navegador
-Basta abrir o arquivo `index.html` (para o quiz completo) ou `wireframe-comparativo.html` (para o comparativo de design).
+### Opção 1: Navegador Direto
+Dê um duplo clique no arquivo `index.html` para executar o quiz de produção imediatamente.
 
-### Opção 2: Servidor local rápido (Node.js)
+### Opção 2: Servidor de Desenvolvimento Local
 ```bash
-# Via npx serve na porta 3005
+# Executando via npx serve
 npx serve -l 3005 .
 ```
-- **Quiz de Produção:** `http://localhost:3005/index.html`
-- **Wireframe Comparativo:** `http://localhost:3005/wireframe-comparativo.html`
+Acesse no navegador:
+- **Quiz de Produção**: `http://localhost:3005/index.html`
+- **Wireframe Comparativo**: `http://localhost:3005/wireframe-comparativo.html`
 
 ---
 
-## 📊 Central de Demonstração de Dados
+## 📄 Autoria e Direitos
 
-Para testar o fluxo de captura e o painel:
-1. Complete o teste respondendo às 4 perguntas ou utilize os atalhos de simulação na barra superior.
-2. Na tela final, clique no botão flutuante **`Painel de Leads (Demo)`** no canto inferior direito.
-3. Visualize os contadores em tempo real, a tabela com as respostas salvas e o botão **`Copiar JSON`** pronto para integração com APIs (Supabase, HubSpot, ActiveCampaign ou Webhooks).
-
----
-
-## 📄 Licença & Direitos
-
-Projeto desenvolvido por **Thiago Nascimento Barbosa** para fins de avaliação e portfólio de engenharia de conversão frontend.
-Todos os direitos de marca e logotipos pertencem ao **Educly.app**.
+Projeto desenvolvido e arquitetado por **Thiago Nascimento Barbosa**.  
+Identidade e marcas registradas pertencem ao **Educly.app**.
