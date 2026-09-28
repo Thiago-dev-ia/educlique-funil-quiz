@@ -45,7 +45,7 @@ O projeto implementa uma arquitetura modular em CSS orientada por classes de esc
 ## 📂 Árvore Estruturada de Arquivos
 
 ```
-educlique-funil-quiz/
+educly-funil-quiz/
 ├── docs/
 │   └── screenshots/                        # Evidências e capturas reais dos 4 temas
 │       ├── 01-tema-educly-oficial.png      # Print do Tema 1 (Educly Autoral)
